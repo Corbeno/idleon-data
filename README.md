@@ -24,12 +24,45 @@ npm install --save git+https://git@github.com/Corbeno/idleon-data.git
 
 Simply `require` this module.
 
-```
+```javascript
 // example.js
 const myData = require('idleon-data');
 ```
 
 Each `.json` file will have its own key based on the filename. e.g. `/maps/itemNames.json` will be accessable at the `itemNames` key.
+
+## Examples
+
+```javascript
+const myData = require('idleon-data');
+
+// Output the value for the 'Copper' item
+// Should result in "Copper Ore"
+console.log(myData.itemNames.Copper)
+
+// Return all items whose value includes the word "Ore"
+// {
+//   Copper: 'Copper Ore',
+//   Iron: 'Iron Ore',
+//   Gold: 'Gold Ore',
+//   Plat: 'Platinum Ore',
+//   Dementia: 'Dementia Ore',
+//   Void: 'Void Ore',
+//   Lustre: 'Lustre Ore',
+//   Starfire: 'Starfire Ore',
+//   Dreadlo: 'Dreadlo Ore',
+//   Godshard: 'Godshard Ore',
+//   StampB5: 'Twin Ores Stamp',
+//   Starlight: 'Starlight Ore'
+// }
+const filterPredicate = (item) => item.includes('Ore')
+const filterItemValues = (items, predicate) =>
+  Object.keys(items)
+    .filter(itemKey => predicate(items[itemKey]))
+    .reduce((filtered, itemKey) => (filtered[itemKey] = items[itemKey], filtered), {});
+
+console.log(filterItemValues(myData.itemNames, filterPredicate))
+```
 
 ## Testing
 

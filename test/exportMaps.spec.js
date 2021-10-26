@@ -46,4 +46,3 @@ describe('exportMap', () => {
     fs.readFileSync.restore();
   })
 })
-
