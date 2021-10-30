@@ -1,0 +1,27 @@
+{
+  "name": "idleon-data",
+  "version": "1.0.0",
+  "description": "A collection of objects that maps Legends of Idleon save data to be usable for other applications",
+  "main": "index.js",
+  "engines": {
+    "node": ">=14.18.1"
+  },
+  "scripts": {
+    "test": "mocha test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Corbeno/idleon-data.git"
+  },
+  "author": "Corbeno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Corbeno/idleon-data/issues"
+  },
+  "homepage": "https://github.com/Corbeno/idleon-data#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "sinon": "^11.1.2"
+  }
+}
