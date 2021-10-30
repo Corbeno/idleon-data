@@ -61,3 +61,4 @@ if __name__ == "__main__":
 
     with open("cards.json", "w") as f:
         json.dump(cards, f)
+        print(f"Wrote to cards.json")
