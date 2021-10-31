@@ -1,0 +1,329 @@
+{
+    "__comment": "Lists all bags in order by category. Includes placeholder bags that aren't in the game yet, indicated with the name 'FILLER'.",
+    "inventory": [{
+        "index": "0",
+        "id": "InvBag1",
+        "name": "Inventory Bag A"
+    }, {
+        "index": "1",
+        "id": "InvBag2",
+        "name": "Inventory Bag B"
+    }, {
+        "index": "2",
+        "id": "InvBag3",
+        "name": "Inventory Bag C"
+    }, {
+        "index": "3",
+        "id": "InvBag4",
+        "name": "Inventory Bag D"
+    }, {
+        "index": "4",
+        "id": "InvBag5",
+        "name": "Inventory Bag E"
+    }, {
+        "index": "5",
+        "id": "InvBag6",
+        "name": "Inventory Bag F"
+    }, {
+        "index": "6",
+        "id": "InvBag7",
+        "name": "Inventory Bag G"
+    }, {
+        "index": "7",
+        "id": "InvBag8",
+        "name": "Inventory Bag H"
+    }, {
+        "index": "8",
+        "id": "InvBag9",
+        "name": "Inventory Bag I"
+    }, {
+        "index": "9",
+        "id": "InvBag10",
+        "name": "FILLER"
+    }, {
+        "index": "10",
+        "id": "InvBag11",
+        "name": "FILLER"
+    }, {
+        "index": "11",
+        "id": "InvBag12",
+        "name": "FILLER"
+    }, {
+        "index": "12",
+        "id": "InvBag13",
+        "name": "FILLER"
+    }, {
+        "index": "13",
+        "id": "InvBag14",
+        "name": "FILLER"
+    }, {
+        "index": "14",
+        "id": "InvBag15",
+        "name": "FILLER"
+    }, {
+        "index": "15",
+        "id": "InvBag16",
+        "name": "FILLER"
+    }, {
+        "index": "16",
+        "id": "InvBag17",
+        "name": "FILLER"
+    }, {
+        "index": "17",
+        "id": "InvBag18",
+        "name": "FILLER"
+    }, {
+        "index": "18",
+        "id": "InvBag19",
+        "name": "FILLER"
+    }, {
+        "index": "19",
+        "id": "InvBag20",
+        "name": "FILLER"
+    }, {
+        "index": "20",
+        "id": "InvBag21",
+        "name": "Inventory Bag U"
+    }, {
+        "index": "21",
+        "id": "InvBag22",
+        "name": "Inventory Bag V"
+    }, {
+        "index": "22",
+        "id": "InvBag23",
+        "name": "Inventory Bag W"
+    }, {
+        "index": "23",
+        "id": "InvBag24",
+        "name": "Inventory Bag X"
+    }, {
+        "index": "24",
+        "id": "InvBag25",
+        "name": "Inventory Bag Y"
+    }, {
+        "index": "25",
+        "id": "InvBag26",
+        "name": "Inventory Bag Z"
+    }, {
+        "index": "100",
+        "id": "InvBag100",
+        "name": "Snakeskinventory Bag"
+    }, {
+        "index": "101",
+        "id": "InvBag101",
+        "name": "Totally Normal and not fake Bag"
+    }, {
+        "index": "110",
+        "id": "InvBag110",
+        "name": "Mamooth Hide Bag"
+    }, {
+        "index": "102",
+        "id": "InvBag102",
+        "name": "Blunderbag"
+    }, {
+        "index": "103",
+        "id": "InvBag103",
+        "name": "Sandy Satchel"
+    }, {
+        "index": "109",
+        "id": "InvBag109",
+        "name": "Shivering Sack"
+    }, {
+        "index": "104",
+        "id": "InvBag104",
+        "name": "Bummo Bag"
+    }, {
+        "index": "105",
+        "id": "InvBag105",
+        "name": "Capitalist Case"
+    }, {
+        "index": "106",
+        "id": "InvBag106",
+        "name": "Wealthy Wallet"
+    }, {
+        "index": "107",
+        "id": "InvBag107",
+        "name": "Prosperous Pouch"
+    }, {
+        "index": "108",
+        "id": "InvBag108",
+        "name": "Sack of Success"
+    }],
+    "storage": [{
+        "index": "0",
+        "id": "InvStorage1",
+        "name": "Storage Chest 1"
+    }, {
+        "index": "1",
+        "id": "InvStorage2",
+        "name": "Storage Chest 2"
+    }, {
+        "index": "2",
+        "id": "InvStorage3",
+        "name": "Storage Chest 3"
+    }, {
+        "index": "3",
+        "id": "InvStorage4",
+        "name": "Storage Chest 4"
+    }, {
+        "index": "4",
+        "id": "InvStorage5",
+        "name": "Storage Chest 5"
+    }, {
+        "index": "5",
+        "id": "InvStorage6",
+        "name": "Storage Chest 6"
+    }, {
+        "index": "6",
+        "id": "InvStorage7",
+        "name": "Storage Chest 7"
+    }, {
+        "index": "7",
+        "id": "InvStorage8",
+        "name": "Storage Chest 8"
+    }, {
+        "index": "8",
+        "id": "InvStorage9",
+        "name": "Storage Chest 9"
+    }, {
+        "index": "9",
+        "id": "InvStorage10",
+        "name": "Storage Chest 10"
+    }, {
+        "index": "10",
+        "id": "InvStorage11",
+        "name": "Storage Chest 11"
+    }, {
+        "index": "11",
+        "id": "InvStorage12",
+        "name": "Storage Chest 12"
+    }, {
+        "index": "12",
+        "id": "InvStorage13",
+        "name": "Storage Chest 13"
+    }, {
+        "index": "14",
+        "id": "InvStorage14",
+        "name": "Storage Chest 14"
+    }, {
+        "index": "13",
+        "id": "InvStorage15",
+        "name": "Storage Chest 15"
+    }, {
+        "index": "15",
+        "id": "InvStorage16",
+        "name": "Storage Chest 16"
+    }, {
+        "index": "16",
+        "id": "InvStorage17",
+        "name": "Storage Chest 17"
+    }, {
+        "index": "17",
+        "id": "InvStorage18",
+        "name": "Storage Chest 18"
+    }, {
+        "index": "18",
+        "id": "InvStorage19",
+        "name": "Storage Chest 19"
+    }, {
+        "index": "19",
+        "id": "InvStorage20",
+        "name": "Storage Chest 20"
+    }, {
+        "index": "20",
+        "id": "InvStorage21",
+        "name": "Storage Chest 21"
+    }, {
+        "index": "21",
+        "id": "InvStorage22",
+        "name": "FILLER"
+    }, {
+        "index": "22",
+        "id": "InvStorage23",
+        "name": "FILLER"
+    }, {
+        "index": "23",
+        "id": "InvStorage24",
+        "name": "FILLER"
+    }, {
+        "index": "24",
+        "id": "InvStorage25",
+        "name": "FILLER"
+    }, {
+        "index": "25",
+        "id": "InvStorage26",
+        "name": "FILLER"
+    }, {
+        "index": "26",
+        "id": "InvStorage27",
+        "name": "FILLER"
+    }, {
+        "index": "27",
+        "id": "InvStorage28",
+        "name": "FILLER"
+    }, {
+        "index": "28",
+        "id": "InvStorage29",
+        "name": "FILLER"
+    }, {
+        "index": "29",
+        "id": "InvStorage30",
+        "name": "FILLER"
+    }, {
+        "index": "30",
+        "id": "InvStorage31",
+        "name": "Storage Chest 90"
+    }, {
+        "index": "31",
+        "id": "InvStorage32",
+        "name": "Storage Chest 91"
+    }, {
+        "index": "32",
+        "id": "InvStorage33",
+        "name": "Storage Chest 92"
+    }, {
+        "index": "33",
+        "id": "InvStorage34",
+        "name": "Storage Chest 93"
+    }, {
+        "index": "34",
+        "id": "InvStorage35",
+        "name": "Storage Chest 94"
+    }, {
+        "index": "35",
+        "id": "InvStorage36",
+        "name": "Storage Chest 95"
+    }, {
+        "index": "36",
+        "id": "InvStorage37",
+        "name": "Storage Chest 96"
+    }, {
+        "index": "37",
+        "id": "InvStorage38",
+        "name": "Storage Chest 97"
+    }, {
+        "index": "38",
+        "id": "InvStorage39",
+        "name": "Storage Chest 98"
+    }, {
+        "index": "39",
+        "id": "InvStorage40",
+        "name": "Storage Chest 99"
+    }, {
+        "index": "40",
+        "id": "InvStorage41",
+        "name": "Storage Chest 99B"
+    }, {
+        "index": "41",
+        "id": "InvStorage42",
+        "name": "Storage Chest 99C"
+    }, {
+        "index": "100",
+        "id": "InvStorageF",
+        "name": "Dank Paypay Chest"
+    }, {
+        "index": "101",
+        "id": "Blank",
+        "name": "ERROR"
+    }]
+}
