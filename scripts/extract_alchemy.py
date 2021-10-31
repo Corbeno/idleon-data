@@ -13,47 +13,59 @@ Requires Python 3.
 import json
 import re
 from argparse import ArgumentParser
+from functools import partial
 
-fn_pattern = r"""=function\(\){return(.+?)}"""
+
+def parse_function_value(text, name):
+    # These functions use `.split(" ")` for some reason,
+    # so we need to eval the return value to get the actual lists.
+    return eval(re.search(rf"""{name}=function\(\){{return(.+?)}}""", text)[1])
+
+
+def parse_bubble(bubble):
+    parsed = {
+        "name": bubble[0],
+        "description": bubble[9].replace("_", " ").replace("{", "_"),
+        "effect": bubble[-1],
+        "powerPerLevel": float(bubble[1]),
+        "algorithm": bubble[3],
+        "materialNames": [item for item in bubble[5:8] if item != "Blank"],
+    }
+
+    try:
+        parsed["materialCosts"] = [cost for cost in map(int, bubble[11:14]) if cost > 0]
+    except (ValueError, IndexError):
+        # Vials don't have costs, so they're 4 items shorter.
+        # We only need to add costs for bubbles.
+        pass
+
+    return parsed
 
 
 def parse_alchemy(path="Z.js"):
     with open(path, "r") as f:
         text = f.read()
 
-    # These functions use `.split(" ")` for some reason,
-    # so we need to eval the return value to get the actual lists.
-    alchemy_description = eval(
-        re.search(rf"""AlchemyDescription{fn_pattern}""", text)[1]
-    )
-    vial_items = eval(re.search(rf"""AlchemyVialItems{fn_pattern}""", text)[1])
-    vial_percents = eval(re.search(rf"""AlchemyVialItemsPCT{fn_pattern}""", text)[1])
+    parse_z_fn = partial(parse_function_value, text)
 
-    # The 6th category is the liquid shop, which should probably be parsed separately.
-    categories = ["orange", "green", "purple", "yellow", "vials"]
-
-    alchemy = {
-        category: [
-            {
-                "name": bubble[0],
-                "powerPerLevel": float(bubble[1]),
-                "algorithm": bubble[3],
-                "materials": [item for item in bubble[5:8] if item != "Blank"],
-                "description": bubble[9].replace("_", " ").replace("{", "_"),
-                "effect": bubble[-1],
-            }
-            for bubble in bubbles
-        ]
-        for category, bubbles in zip(categories, alchemy_description)
-    }
-
-    # Add vial-specific info.
-    alchemy["vials"] = [
-        vial | {"unlock": item, "roll": 100 - int(roll)}
-        for vial, item, roll in zip(alchemy["vials"], vial_items, vial_percents)
+    # The last category is the liquid shop, so don't parse it.
+    categories = [
+        list(map(parse_bubble, bubbles))
+        for bubbles in parse_z_fn("AlchemyDescription")[:-1]
     ]
 
-    return alchemy
+    return {
+        "bubbles": dict(zip(["orange", "green", "purple", "yellow"], categories)),
+        "vials": [
+            vial | {"unlock": item, "roll": 100 - int(roll)}
+            for vial, item, roll in zip(
+                categories[-1],
+                parse_z_fn("AlchemyVialItems"),
+                parse_z_fn("AlchemyVialItemsPCT"),
+            )
+        ],
+        "vialCosts": list(map(int, parse_z_fn("AlchemyVialQTYreq"))),
+    }
 
 
 if __name__ == "__main__":
@@ -71,8 +83,8 @@ if __name__ == "__main__":
             "Contains all cauldron and vial data. Use itemNames.json to map "
             "material names to their display names. In descriptions, `_` is "
             "a placeholder for the current power. `algorithm` is the function "
-            "used by the game to calculate power based on powerPerLevel "
-            "and current level."
+            "used by the game to calculate power based on powerPerLevel and "
+            "current level."
         )
     } | parse_alchemy(args.infile)
 
