@@ -2,12 +2,12 @@
     "__comment": "Lists all cards in order by category. Category names are not in Z.js, so users will need to maintain their own list of card category names. Use monsterNames.json to map the card names to their display names. The full card bonus text takes the form `+<powerPerTier*tier><effect>`; leading spaces are left in for consistency between flat and percentage bonuses. Blank cards are placeholders for empty spaces in the UI.",
     "data": [
         [{
-			"name": "mushG",
-			"id": "A0",
-			"amountPerTier": 5,
-			"effect": " Base HP",
-			"powerPerTier": 12
-		},
+            "name": "mushG",
+            "id": "A0",
+            "amountPerTier": 5,
+            "effect": " Base HP",
+            "powerPerTier": 12
+        },
         {
             "name": "mushR",
             "id": "A1",
@@ -16,921 +16,921 @@
             "powerPerTier": 3
         },
         {
-			"name": "frogG",
-			"id": "A2",
-			"amountPerTier": 6,
-			"effect": " Base MP",
-			"powerPerTier": 10
-		},
-        {
-			"name": "beanG",
-			"id": "A3",
-			"amountPerTier": 7,
-			"effect": " Base Damage",
-			"powerPerTier": 7
-		},
-        {
-			"name": "slimeG",
-			"id": "A4",
-			"amountPerTier": 8,
-			"effect": " Base WIS",
-			"powerPerTier": 2
-		},
-        {
-			"name": "snakeG",
-			"id": "A5",
-			"amountPerTier": 9,
-			"effect": " Move Spd",
-			"powerPerTier": 1
-		},
-        {
-			"name": "carrotO",
-			"id": "A6",
-			"amountPerTier": 10,
-			"effect": " Base AGI",
-			"powerPerTier": 2
-		},
-        {
-			"name": "goblinG",
-			"id": "A7",
-			"amountPerTier": 10,
-			"effect": "% Total HP",
-			"powerPerTier": 2
-		},
-        {
-			"name": "plank",
-			"id": "A8",
-			"amountPerTier": 10,
-			"effect": " Base STR",
-			"powerPerTier": 2
-		},
-        {
-			"name": "frogBIG",
-			"id": "A9",
-			"amountPerTier": 10,
-			"effect": "% Card Drop Chance",
-			"powerPerTier": 5
-		},
-        {
-			"name": "poopSmall",
-			"id": "A10",
-			"amountPerTier": 10,
-			"effect": "% Crystal Mob Spawn Chance",
-			"powerPerTier": 10
-		},
-        {
-			"name": "ratB",
-			"id": "A11",
-			"amountPerTier": 10,
-			"effect": "% Critical Chance",
-			"powerPerTier": 1
-		},
-        {
-			"name": "branch",
-			"id": "A12",
-			"amountPerTier": 10,
-			"effect": " Base WIS",
-			"powerPerTier": 5
-		},
-        {
-			"name": "acorn",
-			"id": "A13",
-			"amountPerTier": 10,
-			"effect": "% Money from Monsters",
-			"powerPerTier": 5
-		},
-        {
-			"name": "Crystal0",
-			"id": "A14",
-			"amountPerTier": 3,
-			"effect": "% Total Drop Rate",
-			"powerPerTier": 5
-		},
-        {
-			"name": "mushW",
-			"id": "A16",
-			"amountPerTier": 10,
-			"effect": "% Total Accuracy",
-			"powerPerTier": 5
-		},
-        {
-			"name": "jarSand",
-			"id": "B1",
-			"amountPerTier": 10,
-			"effect": "% EXP Conversion from Talent",
-			"powerPerTier": 12
-		},
-        {
-			"name": "mimicA",
-			"id": "B2",
-			"amountPerTier": 10,
-			"effect": "% Total Drop Rate",
-			"powerPerTier": 3
-		},
-        {
-			"name": "crabcake",
-			"id": "B3",
-			"amountPerTier": 10,
-			"effect": "% To not consume Food",
-			"powerPerTier": 5
-		},
-        {
-			"name": "coconut",
-			"id": "B4",
-			"amountPerTier": 10,
-			"effect": " Base AGI",
-			"powerPerTier": 5
-		},
-        {
-			"name": "sandcastle",
-			"id": "B5",
-			"amountPerTier": 10,
-			"effect": "% Total Accuracy",
-			"powerPerTier": 4
-		},
-        {
-			"name": "pincermin",
-			"id": "B6",
-			"amountPerTier": 10,
-			"effect": " Weapon Power",
-			"powerPerTier": 1
-		},
-        {
-			"name": "potato",
-			"id": "B7",
-			"amountPerTier": 10,
-			"effect": "% Critical Damage",
-			"powerPerTier": 3
-		},
-        {
-			"name": "steak",
-			"id": "B8",
-			"amountPerTier": 10,
-			"effect": " Base STR",
-			"powerPerTier": 5
-		},
-        {
-			"name": "moonman",
-			"id": "B9",
-			"amountPerTier": 10,
-			"effect": "% Monster EXP While Active",
-			"powerPerTier": 8
-		},
-        {
-			"name": "sandgiant",
-			"id": "B10",
-			"amountPerTier": 10,
-			"effect": "% Minimum Damage",
-			"powerPerTier": 2
-		},
-        {
-			"name": "snailZ",
-			"id": "B11",
-			"amountPerTier": 10,
-			"effect": "% Card Drop Chance",
-			"powerPerTier": 8
-		},
-        {
-			"name": "shovelR",
-			"id": "B12",
-			"amountPerTier": 10,
-			"effect": " Base LUK",
-			"powerPerTier": 6
-		},
-        {
-			"name": "Crystal1",
-			"id": "B13",
-			"amountPerTier": 3,
-			"effect": "% EXP from monsters",
-			"powerPerTier": 2
-		},
-        {
-			"name": "Bandit_Bob",
-			"id": "B14",
-			"amountPerTier": 1,
-			"effect": "% Money from Monsters",
-			"powerPerTier": 1
-		},
-        {
-			"name": "Blank",
-			"id": "A0",
-			"amountPerTier": 10,
-			"effect": "% Base HP",
-			"powerPerTier": 3
-		},
-        {
-			"name": "Copper",
-			"id": "C1",
-			"amountPerTier": 10,
-			"effect": " Base accuracy",
-			"powerPerTier": 4
-		},
-        {
-			"name": "Iron",
-			"id": "C2",
-			"amountPerTier": 10,
-			"effect": "% Total Mining Efficiency",
-			"powerPerTier": 5
-		},
-        {
-			"name": "Gold",
-			"id": "C3",
-			"amountPerTier": 10,
-			"effect": "% Mining EXP",
-			"powerPerTier": 5
-		},
-        {
-			"name": "ForgeA",
-			"id": "C16",
-			"amountPerTier": 10,
-			"effect": "% Smithing EXP",
-			"powerPerTier": 4
-		},
-        {
-			"name": "OakTree",
-			"id": "C4",
-			"amountPerTier": 10,
-			"effect": " Base Defence",
-			"powerPerTier": 3
-		},
-        {
-			"name": "BirchTree",
-			"id": "C5",
-			"amountPerTier": 10,
-			"effect": "% Total Choppin Efficiency",
-			"powerPerTier": 5
-		},
-        {
-			"name": "JungleTree",
-			"id": "C6",
-			"amountPerTier": 10,
-			"effect": "% Choppin EXP",
-			"powerPerTier": 5
-		},
-        {
-			"name": "ForestTree",
-			"id": "C7",
-			"amountPerTier": 10,
-			"effect": "% EXP Conversion from Talent",
-			"powerPerTier": 8
-		},
-        {
-			"name": "Fish1",
-			"id": "C8",
-			"amountPerTier": 10,
-			"effect": "% Total MP",
-			"powerPerTier": 3
-		},
-        {
-			"name": "Fish2",
-			"id": "C9",
-			"amountPerTier": 10,
-			"effect": "% Total Fishing Efficiency",
-			"powerPerTier": 5
-		},
-        {
-			"name": "Fish3",
-			"id": "C10",
-			"amountPerTier": 10,
-			"effect": "% Fishing EXP",
-			"powerPerTier": 5
-		},
-        {
-			"name": "Bug1",
-			"id": "C11",
-			"amountPerTier": 10,
-			"effect": "% Monster EXP While Active",
-			"powerPerTier": 4
-		},
-        {
-			"name": "Bug2",
-			"id": "C12",
-			"amountPerTier": 10,
-			"effect": "% Total Catching Efficiency",
-			"powerPerTier": 5
-		},
-        {
-			"name": "Plat",
-			"id": "D2",
-			"amountPerTier": 10,
-			"effect": "% Mining Away Gains",
-			"powerPerTier": 2
-		},
-        {
-			"name": "Dementia",
-			"id": "D1",
-			"amountPerTier": 10,
-			"effect": "% Mining Speed",
-			"powerPerTier": 4
-		},
-        {
-			"name": "Void",
-			"id": "D3",
-			"amountPerTier": 10,
-			"effect": "% Card Drop Chance",
-			"powerPerTier": 6
-		},
-        {
-			"name": "ForgeB",
-			"id": "D16",
-			"amountPerTier": 10,
-			"effect": "% Smithing EXP",
-			"powerPerTier": 7
-		},
-        {
-			"name": "PalmTree",
-			"id": "D7",
-			"amountPerTier": 10,
-			"effect": "% Choppin Away Gains",
-			"powerPerTier": 2
-		},
-        {
-			"name": "ToiletTree",
-			"id": "D5",
-			"amountPerTier": 10,
-			"effect": "% Choppin Speed",
-			"powerPerTier": 4
-		},
-        {
-			"name": "StumpTree",
-			"id": "D6",
-			"amountPerTier": 10,
-			"effect": "% Total Accuracy",
-			"powerPerTier": 3
-		},
-        {
-			"name": "Fish4",
-			"id": "D11",
-			"amountPerTier": 10,
-			"effect": "% Fishing Away Gains",
-			"powerPerTier": 2
-		},
-        {
-			"name": "Bug3",
-			"id": "D10",
-			"amountPerTier": 10,
-			"effect": "% Catching EXP",
-			"powerPerTier": 5
-		},
-        {
-			"name": "Bug4",
-			"id": "D9",
-			"amountPerTier": 10,
-			"effect": "% Catching Away Gains",
-			"powerPerTier": 2
-		},
-        {
-			"name": "SoulCard1",
-			"id": "D17",
-			"amountPerTier": 3,
-			"effect": "% Defence from Equipment",
-			"powerPerTier": 3
-		},
-        {
-			"name": "SoulCard2",
-			"id": "D18",
-			"amountPerTier": 3,
-			"effect": " Starting Pts in Worship",
-			"powerPerTier": 4
-		},
-        {
-			"name": "CritterCard1",
-			"id": "D19",
-			"amountPerTier": 4,
-			"effect": "% Shiny Critter Chance",
-			"powerPerTier": 3
-		},
-        {
-			"name": "CritterCard2",
-			"id": "D20",
-			"amountPerTier": 4,
-			"effect": "% Trapping Efficiency",
-			"powerPerTier": 5
-		},
-        {
-			"name": "CritterCard3",
-			"id": "D21",
-			"amountPerTier": 4,
-			"effect": "% Trapping EXP",
-			"powerPerTier": 5
-		},
-        {
-			"name": "sheep",
-			"id": "E0",
-			"amountPerTier": 11,
-			"effect": "% Defence from Equipment",
-			"powerPerTier": 3
-		},
-        {
-			"name": "flake",
-			"id": "E1",
-			"amountPerTier": 12,
-			"effect": " Base STR",
-			"powerPerTier": 7
-		},
-        {
-			"name": "stache",
-			"id": "E2",
-			"amountPerTier": 13,
-			"effect": "% Card Drop Chance",
-			"powerPerTier": 9
-		},
-        {
-			"name": "bloque",
-			"id": "E3",
-			"amountPerTier": 14,
-			"effect": " Base AGI",
-			"powerPerTier": 7
-		},
-        {
-			"name": "mamoth",
-			"id": "E4",
-			"amountPerTier": 15,
-			"effect": "% Total HP",
-			"powerPerTier": 3.5
-		},
-        {
-			"name": "snowball",
-			"id": "E5",
-			"amountPerTier": 15,
-			"effect": "% Total Damage",
-			"powerPerTier": 3
-		},
-        {
-			"name": "penguin",
-			"id": "E6",
-			"amountPerTier": 15,
-			"effect": " Base WIS",
-			"powerPerTier": 7
-		},
-        {
-			"name": "thermostat",
-			"id": "E7",
-			"amountPerTier": 15,
-			"effect": "% Critical Damage",
-			"powerPerTier": 4
-		},
-        {
-			"name": "glass",
-			"id": "E8",
-			"amountPerTier": 17,
-			"effect": " Base LUK",
-			"powerPerTier": 7
-		},
-        {
-			"name": "snakeB",
-			"id": "E9",
-			"amountPerTier": 17,
-			"effect": "% MP regen rate",
-			"powerPerTier": 5
-		},
-        {
-			"name": "speaker",
-			"id": "E10",
-			"amountPerTier": 17,
-			"effect": "% Total Drop Rate",
-			"powerPerTier": 3
-		},
-        {
-			"name": "eye",
-			"id": "E11",
-			"amountPerTier": 17,
-			"effect": "% Total Accuracy",
-			"powerPerTier": 5
-		},
-        {
-			"name": "ram",
-			"id": "E14",
-			"amountPerTier": 20,
-			"effect": " Weapon Power",
-			"powerPerTier": 2
-		},
-        {
-			"name": "skele",
-			"id": "E12",
-			"amountPerTier": 15,
-			"effect": "% Critical Chance",
-			"powerPerTier": 1
-		},
-        {
-			"name": "skele2",
-			"id": "E13",
-			"amountPerTier": 15,
-			"effect": "% Total Damage",
-			"powerPerTier": 3
-		},
-        {
-			"name": "Crystal2",
-			"id": "E15",
-			"amountPerTier": 10,
-			"effect": "% EXP from monsters",
-			"powerPerTier": 3
-		},
-        {
-			"name": "Lustre",
-			"id": "D4",
-			"amountPerTier": 10,
-			"effect": " Base LUK",
-			"powerPerTier": 4
-		},
-        {
-			"name": "SoulCard3",
-			"id": "F3",
-			"amountPerTier": 3,
-			"effect": " Starting Pts in Worship",
-			"powerPerTier": 6
-		},
-        {
-			"name": "SoulCard4",
-			"id": "F10",
-			"amountPerTier": 4,
-			"effect": "% Max Charge",
-			"powerPerTier": 7
-		},
-        {
-			"name": "SoulCard5",
-			"id": "F11",
-			"amountPerTier": 5,
-			"effect": "% Charge Rate",
-			"powerPerTier": 5
-		},
-        {
-			"name": "CritterCard4",
-			"id": "F4",
-			"amountPerTier": 4,
-			"effect": "% Shiny Critter Chance",
-			"powerPerTier": 5
-		},
-        {
-			"name": "CritterCard5",
-			"id": "F5",
-			"amountPerTier": 4,
-			"effect": "% EXP from monsters",
-			"powerPerTier": 1.25
-		},
-        {
-			"name": "CritterCard6",
-			"id": "F6",
-			"amountPerTier": 5,
-			"effect": "% Shiny Critter Chance",
-			"powerPerTier": 6
-		},
-        {
-			"name": "CritterCard7",
-			"id": "F7",
-			"amountPerTier": 6,
-			"effect": "% Skill AFK gain rate",
-			"powerPerTier": 1
-		},
-        {
-			"name": "SaharanFoal",
-			"id": "D8",
-			"amountPerTier": 10,
-			"effect": "% Choppin Away Gains",
-			"powerPerTier": 2.5
-		},
-        {
-			"name": "Tree7",
-			"id": "F2",
-			"amountPerTier": 10,
-			"effect": "% Choppin Speed",
-			"powerPerTier": 6
-		},
-        {
-			"name": "Bug5",
-			"id": "F8",
-			"amountPerTier": 10,
-			"effect": "% Total Catching Efficiency",
-			"powerPerTier": 7
-		},
-        {
-			"name": "Bug6",
-			"id": "F9",
-			"amountPerTier": 10,
-			"effect": "% Catching Away Gains",
-			"powerPerTier": 2.5
-		},
-        {
-			"name": "frogP",
-			"id": "X0",
-			"amountPerTier": 1.5,
-			"effect": " Base Dungeon MP",
-			"powerPerTier": 2
-		},
-        {
-			"name": "frogD",
-			"id": "X1",
-			"amountPerTier": 2,
-			"effect": "% Block Chance",
-			"powerPerTier": 2
-		},
-        {
-			"name": "frogY",
-			"id": "X2",
-			"amountPerTier": 2,
-			"effect": " Base Dungeon Damage",
-			"powerPerTier": 1.5
-		},
-        {
-			"name": "frogR",
-			"id": "X14",
-			"amountPerTier": 2,
-			"effect": "% Dungeon Card Chance",
-			"powerPerTier": 6
-		},
-        {
-			"name": "frogW",
-			"id": "X15",
-			"amountPerTier": 3,
-			"effect": "% Dungeon Credits",
-			"powerPerTier": 2.5
-		},
-        {
-			"name": "frogGR",
-			"id": "X3",
-			"amountPerTier": 1.5,
-			"effect": "% to start with RNG item",
-			"powerPerTier": 15
-		},
-        {
-			"name": "frogGR2",
-			"id": "X4",
-			"amountPerTier": 1.5,
-			"effect": "% Dungeon Flurbos",
-			"powerPerTier": 4
-		},
-        {
-			"name": "frogGR3",
-			"id": "X5",
-			"amountPerTier": 1.5,
-			"effect": "% Dungeon Credits",
-			"powerPerTier": 5
-		},
-        {
-			"name": "target",
-			"id": "X6",
-			"amountPerTier": 2,
-			"effect": " Base Dungeon HP",
-			"powerPerTier": 2
-		},
-        {
-			"name": "rocky",
-			"id": "X7",
-			"amountPerTier": 2,
-			"effect": "% Dungeon Card Chance",
-			"powerPerTier": 8
-		},
-        {
-			"name": "steakR",
-			"id": "X9",
-			"amountPerTier": 2,
-			"effect": "% Dungeon Money",
-			"powerPerTier": 6
-		},
-        {
-			"name": "totem",
-			"id": "X16",
-			"amountPerTier": 2,
-			"effect": "% RNG item rarity",
-			"powerPerTier": 10
-		},
-        {
-			"name": "cactus",
-			"id": "X8",
-			"amountPerTier": 2,
-			"effect": "% Dungeon Boss Dmg",
-			"powerPerTier": 3
-		},
-        {
-			"name": "potatoB",
-			"id": "X10",
-			"amountPerTier": 5,
-			"effect": "% Dungeon MP regen",
-			"powerPerTier": 5
-		},
-        {
-			"name": "snakeZ",
-			"id": "X11",
-			"amountPerTier": 1.5,
-			"effect": "% Dungeon Drop Rate",
-			"powerPerTier": 4
-		},
-        {
-			"name": "snakeZ2",
-			"id": "X12",
-			"amountPerTier": 1.5,
-			"effect": "% Total Dungeon Dmg",
-			"powerPerTier": 5
-		},
-        {
-			"name": "snakeZ3",
-			"id": "X13",
-			"amountPerTier": 1.5,
-			"effect": "% Dungeon Flurbos",
-			"powerPerTier": 5
-		},
-        {
-			"name": "iceknight",
-			"id": "X17",
-			"amountPerTier": 8,
-			"effect": "% Dungeon MP regen",
-			"powerPerTier": 8
-		},
-        {
-			"name": "iceBossZ",
-			"id": "X18",
-			"amountPerTier": 2,
-			"effect": "% Dungeon Card Chance",
-			"powerPerTier": 15
-		},
-        {
-			"name": "iceBossZ2",
-			"id": "X19",
-			"amountPerTier": 1.5,
-			"effect": "% Dungeon Credits",
-			"powerPerTier": 8
-		},
-        {
-			"name": "iceBossZ3",
-			"id": "X20",
-			"amountPerTier": 1.5,
-			"effect": "% Total Dungeon Dmg",
-			"powerPerTier": 8
-		},
-        {
-			"name": "babayaga",
-			"id": "Z0",
-			"amountPerTier": 1.5,
-			"effect": "% Money from Monsters",
-			"powerPerTier": 10
-		},
-        {
-			"name": "poopBig",
-			"id": "Z1",
-			"amountPerTier": 1.5,
-			"effect": "% Total Damage",
-			"powerPerTier": 5
-		},
-        {
-			"name": "poopD",
-			"id": "A15",
-			"amountPerTier": 1,
-			"effect": "% Fighting AFK gain rate",
-			"powerPerTier": 1
-		},
-        {
-			"name": "wolfA",
-			"id": "Z2",
-			"amountPerTier": 1.5,
-			"effect": "% Skill AFK gain rate",
-			"powerPerTier": 2.5
-		},
-        {
-			"name": "wolfB",
-			"id": "Z4",
-			"amountPerTier": 1.5,
-			"effect": "% Fighting AFK gain rate",
-			"powerPerTier": 2.5
-		},
-        {
-			"name": "babaHour",
-			"id": "Z5",
-			"amountPerTier": 1.5,
-			"effect": "% Double AFK claim chance",
-			"powerPerTier": 3
-		},
-        {
-			"name": "babaMummy",
-			"id": "Z6",
-			"amountPerTier": 1.5,
-			"effect": "% Total Drop Rate",
-			"powerPerTier": 6
-		},
-        {
-			"name": "Boss2A",
-			"id": "Z3",
-			"amountPerTier": 1.5,
-			"effect": "% EXP from monsters",
-			"powerPerTier": 5
-		},
-        {
-			"name": "Boss2B",
-			"id": "Z7",
-			"amountPerTier": 1.5,
-			"effect": "% Skill EXP",
-			"powerPerTier": 3.75
-		},
-        {
-			"name": "Boss3A",
-			"id": "Z8",
-			"amountPerTier": 1.5,
-			"effect": "% Cog Build Spd (Passive)",
-			"powerPerTier": 8
-		},
-        {
-			"name": "Boss3B",
-			"id": "Z9",
-			"amountPerTier": 1.5,
-			"effect": "% Shrine Effects",
-			"powerPerTier": 5
-		},
-        {
-			"name": "ghost",
-			"id": "Y0",
-			"amountPerTier": 2,
-			"effect": "% Monster EXP While Active",
-			"powerPerTier": 3
-		},
-        {
-			"name": "xmasEvent",
-			"id": "Y1",
-			"amountPerTier": 1.5,
-			"effect": "% Total Drop Rate",
-			"powerPerTier": 3
-		},
-        {
-			"name": "xmasEvent2",
-			"id": "Y2",
-			"amountPerTier": 1.5,
-			"effect": "% Money from Monsters",
-			"powerPerTier": 3
-		},
-        {
-			"name": "slimeR",
-			"id": "Y3",
-			"amountPerTier": 2,
-			"effect": "% Defence from Equipment",
-			"powerPerTier": 3
-		},
-        {
-			"name": "loveEvent",
-			"id": "Y4",
-			"amountPerTier": 1.5,
-			"effect": "% Total HP",
-			"powerPerTier": 5
-		},
-        {
-			"name": "loveEvent2",
-			"id": "Y5",
-			"amountPerTier": 1.5,
-			"effect": "% Boost Food Effect",
-			"powerPerTier": 4
-		},
-        {
-			"name": "sheepB",
-			"id": "Y6",
-			"amountPerTier": 3,
-			"effect": "% MP regen rate",
-			"powerPerTier": 3
-		},
-        {
-			"name": "snakeY",
-			"id": "Y7",
-			"amountPerTier": 3,
-			"effect": " Base LUK",
-			"powerPerTier": 3
-		},
-        {
-			"name": "EasterEvent1",
-			"id": "Y8",
-			"amountPerTier": 1.5,
-			"effect": "% Card Drop Chance",
-			"powerPerTier": 1
-		},
-        {
-			"name": "EasterEvent2",
-			"id": "Y9",
-			"amountPerTier": 1.5,
-			"effect": "% Critical Damage",
-			"powerPerTier": 1
-		},
-        {
-			"name": "shovelY",
-			"id": "Y13",
-			"amountPerTier": 4,
-			"effect": " Base Defence",
-			"powerPerTier": 2
-		},
-        {
-			"name": "crabcakeB",
-			"id": "Y10",
-			"amountPerTier": 4,
-			"effect": "% Total Drop Rate",
-			"powerPerTier": 3
-		},
-        {
-			"name": "SummerEvent1",
-			"id": "Y11",
-			"amountPerTier": 8,
-			"effect": "% Fishing Away Gains",
-			"powerPerTier": 1
-		},
-        {
-			"name": "SummerEvent2",
-			"id": "Y12",
-			"amountPerTier": 8,
-			"effect": "% Catching EXP",
-			"powerPerTier": 4
-		}]
+            "name": "frogG",
+            "id": "A2",
+            "amountPerTier": 6,
+            "effect": " Base MP",
+            "powerPerTier": 10
+        },
+        {
+            "name": "beanG",
+            "id": "A3",
+            "amountPerTier": 7,
+            "effect": " Base Damage",
+            "powerPerTier": 7
+        },
+        {
+            "name": "slimeG",
+            "id": "A4",
+            "amountPerTier": 8,
+            "effect": " Base WIS",
+            "powerPerTier": 2
+        },
+        {
+            "name": "snakeG",
+            "id": "A5",
+            "amountPerTier": 9,
+            "effect": " Move Spd",
+            "powerPerTier": 1
+        },
+        {
+            "name": "carrotO",
+            "id": "A6",
+            "amountPerTier": 10,
+            "effect": " Base AGI",
+            "powerPerTier": 2
+        },
+        {
+            "name": "goblinG",
+            "id": "A7",
+            "amountPerTier": 10,
+            "effect": "% Total HP",
+            "powerPerTier": 2
+        },
+        {
+            "name": "plank",
+            "id": "A8",
+            "amountPerTier": 10,
+            "effect": " Base STR",
+            "powerPerTier": 2
+        },
+        {
+            "name": "frogBIG",
+            "id": "A9",
+            "amountPerTier": 10,
+            "effect": "% Card Drop Chance",
+            "powerPerTier": 5
+        },
+        {
+            "name": "poopSmall",
+            "id": "A10",
+            "amountPerTier": 10,
+            "effect": "% Crystal Mob Spawn Chance",
+            "powerPerTier": 10
+        },
+        {
+            "name": "ratB",
+            "id": "A11",
+            "amountPerTier": 10,
+            "effect": "% Critical Chance",
+            "powerPerTier": 1
+        },
+        {
+            "name": "branch",
+            "id": "A12",
+            "amountPerTier": 10,
+            "effect": " Base WIS",
+            "powerPerTier": 5
+        },
+        {
+            "name": "acorn",
+            "id": "A13",
+            "amountPerTier": 10,
+            "effect": "% Money from Monsters",
+            "powerPerTier": 5
+        },
+        {
+            "name": "Crystal0",
+            "id": "A14",
+            "amountPerTier": 3,
+            "effect": "% Total Drop Rate",
+            "powerPerTier": 5
+        },
+        {
+            "name": "mushW",
+            "id": "A16",
+            "amountPerTier": 10,
+            "effect": "% Total Accuracy",
+            "powerPerTier": 5
+        }],
+        [{
+            "name": "jarSand",
+            "id": "B1",
+            "amountPerTier": 10,
+            "effect": "% EXP Conversion from Talent",
+            "powerPerTier": 12
+        },
+        {
+            "name": "mimicA",
+            "id": "B2",
+            "amountPerTier": 10,
+            "effect": "% Total Drop Rate",
+            "powerPerTier": 3
+        },
+        {
+            "name": "crabcake",
+            "id": "B3",
+            "amountPerTier": 10,
+            "effect": "% To not consume Food",
+            "powerPerTier": 5
+        },
+        {
+            "name": "coconut",
+            "id": "B4",
+            "amountPerTier": 10,
+            "effect": " Base AGI",
+            "powerPerTier": 5
+        },
+        {
+            "name": "sandcastle",
+            "id": "B5",
+            "amountPerTier": 10,
+            "effect": "% Total Accuracy",
+            "powerPerTier": 4
+        },
+        {
+            "name": "pincermin",
+            "id": "B6",
+            "amountPerTier": 10,
+            "effect": " Weapon Power",
+            "powerPerTier": 1
+        },
+        {
+            "name": "potato",
+            "id": "B7",
+            "amountPerTier": 10,
+            "effect": "% Critical Damage",
+            "powerPerTier": 3
+        },
+        {
+            "name": "steak",
+            "id": "B8",
+            "amountPerTier": 10,
+            "effect": " Base STR",
+            "powerPerTier": 5
+        },
+        {
+            "name": "moonman",
+            "id": "B9",
+            "amountPerTier": 10,
+            "effect": "% Monster EXP While Active",
+            "powerPerTier": 8
+        },
+        {
+            "name": "sandgiant",
+            "id": "B10",
+            "amountPerTier": 10,
+            "effect": "% Minimum Damage",
+            "powerPerTier": 2
+        },
+        {
+            "name": "snailZ",
+            "id": "B11",
+            "amountPerTier": 10,
+            "effect": "% Card Drop Chance",
+            "powerPerTier": 8
+        },
+        {
+            "name": "shovelR",
+            "id": "B12",
+            "amountPerTier": 10,
+            "effect": " Base LUK",
+            "powerPerTier": 6
+        },
+        {
+            "name": "Crystal1",
+            "id": "B13",
+            "amountPerTier": 3,
+            "effect": "% EXP from monsters",
+            "powerPerTier": 2
+        },
+        {
+            "name": "Bandit_Bob",
+            "id": "B14",
+            "amountPerTier": 1,
+            "effect": "% Money from Monsters",
+            "powerPerTier": 1
+        },
+        {
+            "name": "Blank",
+            "id": "A0",
+            "amountPerTier": 10,
+            "effect": "% Base HP",
+            "powerPerTier": 3
+        }],
+        [{
+            "name": "Copper",
+            "id": "C1",
+            "amountPerTier": 10,
+            "effect": " Base accuracy",
+            "powerPerTier": 4
+        },
+        {
+            "name": "Iron",
+            "id": "C2",
+            "amountPerTier": 10,
+            "effect": "% Total Mining Efficiency",
+            "powerPerTier": 5
+        },
+        {
+            "name": "Gold",
+            "id": "C3",
+            "amountPerTier": 10,
+            "effect": "% Mining EXP",
+            "powerPerTier": 5
+        },
+        {
+            "name": "ForgeA",
+            "id": "C16",
+            "amountPerTier": 10,
+            "effect": "% Smithing EXP",
+            "powerPerTier": 4
+        },
+        {
+            "name": "OakTree",
+            "id": "C4",
+            "amountPerTier": 10,
+            "effect": " Base Defence",
+            "powerPerTier": 3
+        },
+        {
+            "name": "BirchTree",
+            "id": "C5",
+            "amountPerTier": 10,
+            "effect": "% Total Choppin Efficiency",
+            "powerPerTier": 5
+        },
+        {
+            "name": "JungleTree",
+            "id": "C6",
+            "amountPerTier": 10,
+            "effect": "% Choppin EXP",
+            "powerPerTier": 5
+        },
+        {
+            "name": "ForestTree",
+            "id": "C7",
+            "amountPerTier": 10,
+            "effect": "% EXP Conversion from Talent",
+            "powerPerTier": 8
+        },
+        {
+            "name": "Fish1",
+            "id": "C8",
+            "amountPerTier": 10,
+            "effect": "% Total MP",
+            "powerPerTier": 3
+        },
+        {
+            "name": "Fish2",
+            "id": "C9",
+            "amountPerTier": 10,
+            "effect": "% Total Fishing Efficiency",
+            "powerPerTier": 5
+        },
+        {
+            "name": "Fish3",
+            "id": "C10",
+            "amountPerTier": 10,
+            "effect": "% Fishing EXP",
+            "powerPerTier": 5
+        },
+        {
+            "name": "Bug1",
+            "id": "C11",
+            "amountPerTier": 10,
+            "effect": "% Monster EXP While Active",
+            "powerPerTier": 4
+        },
+        {
+            "name": "Bug2",
+            "id": "C12",
+            "amountPerTier": 10,
+            "effect": "% Total Catching Efficiency",
+            "powerPerTier": 5
+        }],
+        [{
+            "name": "Plat",
+            "id": "D2",
+            "amountPerTier": 10,
+            "effect": "% Mining Away Gains",
+            "powerPerTier": 2
+        },
+        {
+            "name": "Dementia",
+            "id": "D1",
+            "amountPerTier": 10,
+            "effect": "% Mining Speed",
+            "powerPerTier": 4
+        },
+        {
+            "name": "Void",
+            "id": "D3",
+            "amountPerTier": 10,
+            "effect": "% Card Drop Chance",
+            "powerPerTier": 6
+        },
+        {
+            "name": "ForgeB",
+            "id": "D16",
+            "amountPerTier": 10,
+            "effect": "% Smithing EXP",
+            "powerPerTier": 7
+        },
+        {
+            "name": "PalmTree",
+            "id": "D7",
+            "amountPerTier": 10,
+            "effect": "% Choppin Away Gains",
+            "powerPerTier": 2
+        },
+        {
+            "name": "ToiletTree",
+            "id": "D5",
+            "amountPerTier": 10,
+            "effect": "% Choppin Speed",
+            "powerPerTier": 4
+        },
+        {
+            "name": "StumpTree",
+            "id": "D6",
+            "amountPerTier": 10,
+            "effect": "% Total Accuracy",
+            "powerPerTier": 3
+        },
+        {
+            "name": "Fish4",
+            "id": "D11",
+            "amountPerTier": 10,
+            "effect": "% Fishing Away Gains",
+            "powerPerTier": 2
+        },
+        {
+            "name": "Bug3",
+            "id": "D10",
+            "amountPerTier": 10,
+            "effect": "% Catching EXP",
+            "powerPerTier": 5
+        },
+        {
+            "name": "Bug4",
+            "id": "D9",
+            "amountPerTier": 10,
+            "effect": "% Catching Away Gains",
+            "powerPerTier": 2
+        },
+        {
+            "name": "SoulCard1",
+            "id": "D17",
+            "amountPerTier": 3,
+            "effect": "% Defence from Equipment",
+            "powerPerTier": 3
+        },
+        {
+            "name": "SoulCard2",
+            "id": "D18",
+            "amountPerTier": 3,
+            "effect": " Starting Pts in Worship",
+            "powerPerTier": 4
+        },
+        {
+            "name": "CritterCard1",
+            "id": "D19",
+            "amountPerTier": 4,
+            "effect": "% Shiny Critter Chance",
+            "powerPerTier": 3
+        },
+        {
+            "name": "CritterCard2",
+            "id": "D20",
+            "amountPerTier": 4,
+            "effect": "% Trapping Efficiency",
+            "powerPerTier": 5
+        },
+        {
+            "name": "CritterCard3",
+            "id": "D21",
+            "amountPerTier": 4,
+            "effect": "% Trapping EXP",
+            "powerPerTier": 5
+        }],
+        [{
+            "name": "sheep",
+            "id": "E0",
+            "amountPerTier": 11,
+            "effect": "% Defence from Equipment",
+            "powerPerTier": 3
+        },
+        {
+            "name": "flake",
+            "id": "E1",
+            "amountPerTier": 12,
+            "effect": " Base STR",
+            "powerPerTier": 7
+        },
+        {
+            "name": "stache",
+            "id": "E2",
+            "amountPerTier": 13,
+            "effect": "% Card Drop Chance",
+            "powerPerTier": 9
+        },
+        {
+            "name": "bloque",
+            "id": "E3",
+            "amountPerTier": 14,
+            "effect": " Base AGI",
+            "powerPerTier": 7
+        },
+        {
+            "name": "mamoth",
+            "id": "E4",
+            "amountPerTier": 15,
+            "effect": "% Total HP",
+            "powerPerTier": 3.5
+        },
+        {
+            "name": "snowball",
+            "id": "E5",
+            "amountPerTier": 15,
+            "effect": "% Total Damage",
+            "powerPerTier": 3
+        },
+        {
+            "name": "penguin",
+            "id": "E6",
+            "amountPerTier": 15,
+            "effect": " Base WIS",
+            "powerPerTier": 7
+        },
+        {
+            "name": "thermostat",
+            "id": "E7",
+            "amountPerTier": 15,
+            "effect": "% Critical Damage",
+            "powerPerTier": 4
+        },
+        {
+            "name": "glass",
+            "id": "E8",
+            "amountPerTier": 17,
+            "effect": " Base LUK",
+            "powerPerTier": 7
+        },
+        {
+            "name": "snakeB",
+            "id": "E9",
+            "amountPerTier": 17,
+            "effect": "% MP regen rate",
+            "powerPerTier": 5
+        },
+        {
+            "name": "speaker",
+            "id": "E10",
+            "amountPerTier": 17,
+            "effect": "% Total Drop Rate",
+            "powerPerTier": 3
+        },
+        {
+            "name": "eye",
+            "id": "E11",
+            "amountPerTier": 17,
+            "effect": "% Total Accuracy",
+            "powerPerTier": 5
+        },
+        {
+            "name": "ram",
+            "id": "E14",
+            "amountPerTier": 20,
+            "effect": " Weapon Power",
+            "powerPerTier": 2
+        },
+        {
+            "name": "skele",
+            "id": "E12",
+            "amountPerTier": 15,
+            "effect": "% Critical Chance",
+            "powerPerTier": 1
+        },
+        {
+            "name": "skele2",
+            "id": "E13",
+            "amountPerTier": 15,
+            "effect": "% Total Damage",
+            "powerPerTier": 3
+        },
+        {
+            "name": "Crystal2",
+            "id": "E15",
+            "amountPerTier": 10,
+            "effect": "% EXP from monsters",
+            "powerPerTier": 3
+        }],
+        [{
+            "name": "Lustre",
+            "id": "D4",
+            "amountPerTier": 10,
+            "effect": " Base LUK",
+            "powerPerTier": 4
+        },
+        {
+            "name": "SoulCard3",
+            "id": "F3",
+            "amountPerTier": 3,
+            "effect": " Starting Pts in Worship",
+            "powerPerTier": 6
+        },
+        {
+            "name": "SoulCard4",
+            "id": "F10",
+            "amountPerTier": 4,
+            "effect": "% Max Charge",
+            "powerPerTier": 7
+        },
+        {
+            "name": "SoulCard5",
+            "id": "F11",
+            "amountPerTier": 5,
+            "effect": "% Charge Rate",
+            "powerPerTier": 5
+        },
+        {
+            "name": "CritterCard4",
+            "id": "F4",
+            "amountPerTier": 4,
+            "effect": "% Shiny Critter Chance",
+            "powerPerTier": 5
+        },
+        {
+            "name": "CritterCard5",
+            "id": "F5",
+            "amountPerTier": 4,
+            "effect": "% EXP from monsters",
+            "powerPerTier": 1.25
+        },
+        {
+            "name": "CritterCard6",
+            "id": "F6",
+            "amountPerTier": 5,
+            "effect": "% Shiny Critter Chance",
+            "powerPerTier": 6
+        },
+        {
+            "name": "CritterCard7",
+            "id": "F7",
+            "amountPerTier": 6,
+            "effect": "% Skill AFK gain rate",
+            "powerPerTier": 1
+        },
+        {
+            "name": "SaharanFoal",
+            "id": "D8",
+            "amountPerTier": 10,
+            "effect": "% Choppin Away Gains",
+            "powerPerTier": 2.5
+        },
+        {
+            "name": "Tree7",
+            "id": "F2",
+            "amountPerTier": 10,
+            "effect": "% Choppin Speed",
+            "powerPerTier": 6
+        },
+        {
+            "name": "Bug5",
+            "id": "F8",
+            "amountPerTier": 10,
+            "effect": "% Total Catching Efficiency",
+            "powerPerTier": 7
+        },
+        {
+            "name": "Bug6",
+            "id": "F9",
+            "amountPerTier": 10,
+            "effect": "% Catching Away Gains",
+            "powerPerTier": 2.5
+        }],
+        [{
+            "name": "frogP",
+            "id": "X0",
+            "amountPerTier": 1.5,
+            "effect": " Base Dungeon MP",
+            "powerPerTier": 2
+        },
+        {
+            "name": "frogD",
+            "id": "X1",
+            "amountPerTier": 2,
+            "effect": "% Block Chance",
+            "powerPerTier": 2
+        },
+        {
+            "name": "frogY",
+            "id": "X2",
+            "amountPerTier": 2,
+            "effect": " Base Dungeon Damage",
+            "powerPerTier": 1.5
+        },
+        {
+            "name": "frogR",
+            "id": "X14",
+            "amountPerTier": 2,
+            "effect": "% Dungeon Card Chance",
+            "powerPerTier": 6
+        },
+        {
+            "name": "frogW",
+            "id": "X15",
+            "amountPerTier": 3,
+            "effect": "% Dungeon Credits",
+            "powerPerTier": 2.5
+        },
+        {
+            "name": "frogGR",
+            "id": "X3",
+            "amountPerTier": 1.5,
+            "effect": "% to start with RNG item",
+            "powerPerTier": 15
+        },
+        {
+            "name": "frogGR2",
+            "id": "X4",
+            "amountPerTier": 1.5,
+            "effect": "% Dungeon Flurbos",
+            "powerPerTier": 4
+        },
+        {
+            "name": "frogGR3",
+            "id": "X5",
+            "amountPerTier": 1.5,
+            "effect": "% Dungeon Credits",
+            "powerPerTier": 5
+        },
+        {
+            "name": "target",
+            "id": "X6",
+            "amountPerTier": 2,
+            "effect": " Base Dungeon HP",
+            "powerPerTier": 2
+        },
+        {
+            "name": "rocky",
+            "id": "X7",
+            "amountPerTier": 2,
+            "effect": "% Dungeon Card Chance",
+            "powerPerTier": 8
+        },
+        {
+            "name": "steakR",
+            "id": "X9",
+            "amountPerTier": 2,
+            "effect": "% Dungeon Money",
+            "powerPerTier": 6
+        },
+        {
+            "name": "totem",
+            "id": "X16",
+            "amountPerTier": 2,
+            "effect": "% RNG item rarity",
+            "powerPerTier": 10
+        },
+        {
+            "name": "cactus",
+            "id": "X8",
+            "amountPerTier": 2,
+            "effect": "% Dungeon Boss Dmg",
+            "powerPerTier": 3
+        },
+        {
+            "name": "potatoB",
+            "id": "X10",
+            "amountPerTier": 5,
+            "effect": "% Dungeon MP regen",
+            "powerPerTier": 5
+        },
+        {
+            "name": "snakeZ",
+            "id": "X11",
+            "amountPerTier": 1.5,
+            "effect": "% Dungeon Drop Rate",
+            "powerPerTier": 4
+        },
+        {
+            "name": "snakeZ2",
+            "id": "X12",
+            "amountPerTier": 1.5,
+            "effect": "% Total Dungeon Dmg",
+            "powerPerTier": 5
+        },
+        {
+            "name": "snakeZ3",
+            "id": "X13",
+            "amountPerTier": 1.5,
+            "effect": "% Dungeon Flurbos",
+            "powerPerTier": 5
+        },
+        {
+            "name": "iceknight",
+            "id": "X17",
+            "amountPerTier": 8,
+            "effect": "% Dungeon MP regen",
+            "powerPerTier": 8
+        },
+        {
+            "name": "iceBossZ",
+            "id": "X18",
+            "amountPerTier": 2,
+            "effect": "% Dungeon Card Chance",
+            "powerPerTier": 15
+        },
+        {
+            "name": "iceBossZ2",
+            "id": "X19",
+            "amountPerTier": 1.5,
+            "effect": "% Dungeon Credits",
+            "powerPerTier": 8
+        },
+        {
+            "name": "iceBossZ3",
+            "id": "X20",
+            "amountPerTier": 1.5,
+            "effect": "% Total Dungeon Dmg",
+            "powerPerTier": 8
+        }],
+        [{
+            "name": "babayaga",
+            "id": "Z0",
+            "amountPerTier": 1.5,
+            "effect": "% Money from Monsters",
+            "powerPerTier": 10
+        },
+        {
+            "name": "poopBig",
+            "id": "Z1",
+            "amountPerTier": 1.5,
+            "effect": "% Total Damage",
+            "powerPerTier": 5
+        },
+        {
+            "name": "poopD",
+            "id": "A15",
+            "amountPerTier": 1,
+            "effect": "% Fighting AFK gain rate",
+            "powerPerTier": 1
+        },
+        {
+            "name": "wolfA",
+            "id": "Z2",
+            "amountPerTier": 1.5,
+            "effect": "% Skill AFK gain rate",
+            "powerPerTier": 2.5
+        },
+        {
+            "name": "wolfB",
+            "id": "Z4",
+            "amountPerTier": 1.5,
+            "effect": "% Fighting AFK gain rate",
+            "powerPerTier": 2.5
+        },
+        {
+            "name": "babaHour",
+            "id": "Z5",
+            "amountPerTier": 1.5,
+            "effect": "% Double AFK claim chance",
+            "powerPerTier": 3
+        },
+        {
+            "name": "babaMummy",
+            "id": "Z6",
+            "amountPerTier": 1.5,
+            "effect": "% Total Drop Rate",
+            "powerPerTier": 6
+        },
+        {
+            "name": "Boss2A",
+            "id": "Z3",
+            "amountPerTier": 1.5,
+            "effect": "% EXP from monsters",
+            "powerPerTier": 5
+        },
+        {
+            "name": "Boss2B",
+            "id": "Z7",
+            "amountPerTier": 1.5,
+            "effect": "% Skill EXP",
+            "powerPerTier": 3.75
+        },
+        {
+            "name": "Boss3A",
+            "id": "Z8",
+            "amountPerTier": 1.5,
+            "effect": "% Cog Build Spd (Passive)",
+            "powerPerTier": 8
+        },
+        {
+            "name": "Boss3B",
+            "id": "Z9",
+            "amountPerTier": 1.5,
+            "effect": "% Shrine Effects",
+            "powerPerTier": 5
+        }],
+        [{
+            "name": "ghost",
+            "id": "Y0",
+            "amountPerTier": 2,
+            "effect": "% Monster EXP While Active",
+            "powerPerTier": 3
+        },
+        {
+            "name": "xmasEvent",
+            "id": "Y1",
+            "amountPerTier": 1.5,
+            "effect": "% Total Drop Rate",
+            "powerPerTier": 3
+        },
+        {
+            "name": "xmasEvent2",
+            "id": "Y2",
+            "amountPerTier": 1.5,
+            "effect": "% Money from Monsters",
+            "powerPerTier": 3
+        },
+        {
+            "name": "slimeR",
+            "id": "Y3",
+            "amountPerTier": 2,
+            "effect": "% Defence from Equipment",
+            "powerPerTier": 3
+        },
+        {
+            "name": "loveEvent",
+            "id": "Y4",
+            "amountPerTier": 1.5,
+            "effect": "% Total HP",
+            "powerPerTier": 5
+        },
+        {
+            "name": "loveEvent2",
+            "id": "Y5",
+            "amountPerTier": 1.5,
+            "effect": "% Boost Food Effect",
+            "powerPerTier": 4
+        },
+        {
+            "name": "sheepB",
+            "id": "Y6",
+            "amountPerTier": 3,
+            "effect": "% MP regen rate",
+            "powerPerTier": 3
+        },
+        {
+            "name": "snakeY",
+            "id": "Y7",
+            "amountPerTier": 3,
+            "effect": " Base LUK",
+            "powerPerTier": 3
+        },
+        {
+            "name": "EasterEvent1",
+            "id": "Y8",
+            "amountPerTier": 1.5,
+            "effect": "% Card Drop Chance",
+            "powerPerTier": 1
+        },
+        {
+            "name": "EasterEvent2",
+            "id": "Y9",
+            "amountPerTier": 1.5,
+            "effect": "% Critical Damage",
+            "powerPerTier": 1
+        },
+        {
+            "name": "shovelY",
+            "id": "Y13",
+            "amountPerTier": 4,
+            "effect": " Base Defence",
+            "powerPerTier": 2
+        },
+        {
+            "name": "crabcakeB",
+            "id": "Y10",
+            "amountPerTier": 4,
+            "effect": "% Total Drop Rate",
+            "powerPerTier": 3
+        },
+        {
+            "name": "SummerEvent1",
+            "id": "Y11",
+            "amountPerTier": 8,
+            "effect": "% Fishing Away Gains",
+            "powerPerTier": 1
+        },
+        {
+            "name": "SummerEvent2",
+            "id": "Y12",
+            "amountPerTier": 8,
+            "effect": "% Catching EXP",
+            "powerPerTier": 4
+        }]
     ]
 }
