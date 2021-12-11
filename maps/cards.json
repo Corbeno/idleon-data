@@ -664,7 +664,7 @@
         }, {
             "name": "potatoB",
             "id": "X10",
-            "amountPerTier": 3.0,
+            "amountPerTier": 5.0,
             "effect": "% Dungeon MP regen",
             "powerPerTier": 5.0
         }, {
@@ -686,29 +686,29 @@
             "effect": "% Dungeon Flurbos",
             "powerPerTier": 5.0
         }, {
-            "name": "Blank",
-            "id": "A0",
-            "amountPerTier": 10.0,
-            "effect": "% Base HP",
-            "powerPerTier": 3.0
+            "name": "iceknight",
+            "id": "X17",
+            "amountPerTier": 8.0,
+            "effect": "% Dungeon MP regen",
+            "powerPerTier": 8.0
         }, {
-            "name": "Blank",
-            "id": "A0",
-            "amountPerTier": 10.0,
-            "effect": "% Base HP",
-            "powerPerTier": 3.0
+            "name": "iceBossZ",
+            "id": "X18",
+            "amountPerTier": 2.0,
+            "effect": "% Dungeon Card Chance",
+            "powerPerTier": 15.0
         }, {
-            "name": "Blank",
-            "id": "A0",
-            "amountPerTier": 10.0,
-            "effect": "% Base HP",
-            "powerPerTier": 3.0
+            "name": "iceBossZ2",
+            "id": "X19",
+            "amountPerTier": 1.5,
+            "effect": "% Dungeon Credits",
+            "powerPerTier": 8.0
         }, {
-            "name": "Blank",
-            "id": "A0",
-            "amountPerTier": 10.0,
-            "effect": "% Base HP",
-            "powerPerTier": 3.0
+            "name": "iceBossZ3",
+            "id": "X20",
+            "amountPerTier": 1.5,
+            "effect": "% Total Dungeon Dmg",
+            "powerPerTier": 8.0
         }, {
             "name": "Blank",
             "id": "A0",
