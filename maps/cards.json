@@ -910,10 +910,10 @@
             "effect": "% Catching EXP",
             "powerPerTier": 4.0
         }, {
-            "name": "Blank",
-            "id": "A0",
-            "amountPerTier": 10.0,
-            "effect": "% Base HP",
+            "name": "xmasEvent3",
+            "id": "Y14",
+            "amountPerTier": 1.0,
+            "effect": "% Defence from Equipment",
             "powerPerTier": 3.0
         }, {
             "name": "Blank",
