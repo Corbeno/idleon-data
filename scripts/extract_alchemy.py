@@ -89,5 +89,5 @@ if __name__ == "__main__":
     } | parse_alchemy(args.infile)
 
     with open("alchemy.json", "w") as f:
-        json.dump(alchemy, f)
+        json.dump(alchemy, f, indent=4)
         print(f"Wrote to alchemy.json")

@@ -43,5 +43,5 @@ datas = {
 for name, data in datas.items():
     filename = f"{name}.json"
     with open(filename, "w") as f:
-        json.dump(data, f)
+        json.dump(data, f, indent=4)
         print(f"Wrote to {filename}")

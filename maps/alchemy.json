@@ -1,869 +1,1538 @@
 {
     "__comment": "Contains all cauldron and vial data. Use itemNames.json to map material names to their display names. In descriptions, `_` is a placeholder for the current power. `algorithm` is the function used by the game to calculate power based on powerPerLevel and current level.",
     "bubbles": {
-        "orange": [{
-            "name": "ROID_RAGIN",
-            "description": "+_ Total STR. 'Total' here means that, for example, a +10% STR bonus from something else wouldn't affect this bonus.",
-            "effect": "TotalSTR",
+        "orange": [
+            {
+                "name": "ROID_RAGIN",
+                "description": "+_ Total STR. 'Total' here means that, for example, a +10% STR bonus from something else wouldn't affect this bonus.",
+                "effect": "TotalSTR",
+                "powerPerLevel": 1.0,
+                "algorithm": "add",
+                "materialNames": [
+                    "OakTree",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    25,
+                    2
+                ]
+            },
+            {
+                "name": "WARRIORS_RULE",
+                "description": "All Orange Passive Bubbles, which are the smaller sized ones, give a _x higher bonus to your warrior-based classes.",
+                "effect": "Opassz",
+                "powerPerLevel": 2.0,
+                "algorithm": "decayMulti",
+                "materialNames": [
+                    "Grasslands1",
+                    "CraftMat1",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    20,
+                    3,
+                    2
+                ]
+            },
+            {
+                "name": "HEARTY_DIGGY",
+                "description": "+_% mining efficiency per power of 10 max HP that your character has. The perfect bonus for miners with infinite HP!",
+                "effect": "MinEff",
+                "powerPerLevel": 50.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "JungleTree",
+                    "CopperBar",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    40,
+                    18,
+                    2
+                ]
+            },
+            {
+                "name": "WYOMING_BLOOD",
+                "description": "Multi-Ore mining chance is increased by +_%, and your max Multi-Ore chance is 300% instead of 100%.",
+                "effect": "MiningACTIVE",
+                "powerPerLevel": 23.5,
+                "algorithm": "bigBase",
+                "materialNames": [
+                    "Bug1",
+                    "Forest1",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    30,
+                    50,
+                    3
+                ]
+            },
+            {
+                "name": "REELY_SMART",
+                "description": "+_% Mining and Fishing EXP gain. Y'know what, I'll even DOUBLE that bonus for whichever skill has the lower level!",
+                "effect": "MinFishEXP",
+                "powerPerLevel": 100.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "CraftMat6",
+                    "DesertA3",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    25,
+                    40,
+                    3
+                ]
+            },
+            {
+                "name": "BIG_MEATY_CLAWS",
+                "description": "Increases base damage by +$. This bonus increases based on how much Max HP you have above 250.",
+                "effect": "bdmgHP",
+                "powerPerLevel": 1.0,
+                "algorithm": "add",
+                "materialNames": [
+                    "BirchTree",
+                    "DesertB2",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    200,
+                    75,
+                    4
+                ]
+            },
+            {
+                "name": "SPLOOSH_SPLOOSH",
+                "description": "Multi-Fish fishing chance is increased by +_%, and your max Multi-Fish chance is 300% instead of 100%.",
+                "effect": "FishingACTIVE",
+                "powerPerLevel": 23.5,
+                "algorithm": "bigBase",
+                "materialNames": [
+                    "Fish2",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    100,
+                    4
+                ]
+            },
+            {
+                "name": "STRONK_TOOLS",
+                "description": "The following tools give +_% more skilling Power than normal: $",
+                "effect": "ToolW",
+                "powerPerLevel": 65.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Plat",
+                    "Grasslands2",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    60,
+                    200,
+                    4
+                ]
+            },
+            {
+                "name": "FMJ",
+                "description": "+_% more defence from Equipment. Also, +1 base Def per Class LV, up to +_.",
+                "effect": "DefPct",
+                "powerPerLevel": 0.5,
+                "algorithm": "add",
+                "materialNames": [
+                    "Bug4",
+                    "DesertC2",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    50,
+                    140,
+                    5
+                ]
+            },
+            {
+                "name": "BAPPITY_BOOPITY",
+                "description": "+_% critical Damage. Badabing, badaboom! Or in Italian, Babadabinga, babadaboomahh!",
+                "effect": "critDMG",
+                "powerPerLevel": 35.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "CraftMat8",
+                    "JungleTree",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    100,
+                    700,
+                    5
+                ]
+            },
+            {
+                "name": "BRITTLEY_SPEARS",
+                "description": "+_% Total damage. This multiplies with other damage bonuses, but adds with the other '+% Total Damage' bubbles.",
+                "effect": "pctDmg1",
+                "powerPerLevel": 40.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Critter1",
+                    "Liquid2"
+                ],
+                "materialCosts": [
+                    10,
+                    3
+                ]
+            },
+            {
+                "name": "CALL_ME_BOB",
+                "description": "+_% Construction EXP Gain. Also gives +50% Bug-Fixing speed if your username is LavaFlame2. Actually, better make that +500%...",
+                "effect": "conEXPACTIVE",
+                "powerPerLevel": 25.0,
+                "algorithm": "bigBase",
+                "materialNames": [
+                    "SnowA3",
+                    "Liquid2"
+                ],
+                "materialCosts": [
+                    120,
+                    3
+                ]
+            },
+            {
+                "name": "CARPENTER",
+                "description": "+_% Build Speed per Construction Level.",
+                "effect": "Construction",
+                "powerPerLevel": 2.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Refinery2",
+                    "Liquid2"
+                ],
+                "materialCosts": [
+                    3,
+                    4
+                ]
+            },
+            {
+                "name": "BUFF_BOI_TALENT",
+                "description": "+_ Talent Points for EACH tab! Yea, it's amazing right? But it's just for warriors, don't tell the other classes!!",
+                "effect": "TalWarrior",
+                "powerPerLevel": 5.0,
+                "algorithm": "bigBase",
+                "materialNames": [
+                    "Critter4",
+                    "Liquid3"
+                ],
+                "materialCosts": [
+                    50,
+                    2
+                ]
+            },
+            {
+                "name": "ORANGE_BARGAIN",
+                "description": "The material costs of ALL orange bubbles are _% lower",
+                "effect": "BubbleCostOr",
+                "powerPerLevel": 40.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Soul4",
+                    "Liquid3"
+                ],
+                "materialCosts": [
+                    30,
+                    3
+                ]
+            }
+        ],
+        "green": [
+            {
+                "name": "SWIFT_STEPPIN",
+                "description": "+_ Total AGI. Probably the lamest of the five stats... err, I mean four, hehe.",
+                "effect": "TotalAGI",
+                "powerPerLevel": 1.0,
+                "algorithm": "add",
+                "materialNames": [
+                    "Copper",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    15,
+                    2
+                ]
+            },
+            {
+                "name": "ARCHER_OR_BUST",
+                "description": "All Green Passive Bonuses, which are the smaller sized ones, give _x more bonuses to your archer-based characters.",
+                "effect": "Gpassz",
+                "powerPerLevel": 2.0,
+                "algorithm": "decayMulti",
+                "materialNames": [
+                    "Grasslands1",
+                    "BirchTree",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    20,
+                    30,
+                    2
+                ]
+            },
+            {
+                "name": "HAMMER_HAMMER",
+                "description": "You can now produce +1 more items at once in the anvil, and your production speed is increased by _%.",
+                "effect": "AnvilACTIVE",
+                "powerPerLevel": 23.0,
+                "algorithm": "bigBase",
+                "materialNames": [
+                    "Iron",
+                    "Grasslands3",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    30,
+                    30,
+                    2
+                ]
+            },
+            {
+                "name": "LIL_BIG_DAMAGE",
+                "description": "+_% Mastery. Mastery is your stat that boosts minimum damage. Just like in Maplest... err, just like how I thought it up myself!",
+                "effect": "Mastery",
+                "powerPerLevel": 20.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Fish1",
+                    "Jungle3",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    25,
+                    40,
+                    3
+                ]
+            },
+            {
+                "name": "ANVILNOMICS",
+                "description": "Costs for buying Anvil Production Points is reduced by _%. This is just like a tax cut, so remember me as a hero!",
+                "effect": "AnvilProdCost",
+                "powerPerLevel": 40.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "ForestTree",
+                    "Gold",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    50,
+                    40,
+                    3
+                ]
+            },
+            {
+                "name": "QUICK_SLAP",
+                "description": "Increases base damage by +$. This bonus increases based on how much Movement Speed you have above 110%.",
+                "effect": "bdmgSPD",
+                "powerPerLevel": 1.0,
+                "algorithm": "add",
+                "materialNames": [
+                    "DesertB1",
+                    "CraftMat6",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    90,
+                    200,
+                    4
+                ]
+            },
+            {
+                "name": "SANIC_TOOLS",
+                "description": "The following tools give +_% more skilling Power than normal: $",
+                "effect": "ToolA",
+                "powerPerLevel": 65.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Jungle1",
+                    "GoldBar",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    130,
+                    6,
+                    4
+                ]
+            },
+            {
+                "name": "BUG]",
+                "description": "Multi-Bug catching chance is increased by +_%, and your max Multi-Bug chance is 300% instead of 100%.",
+                "effect": "CatchingACTIVE",
+                "powerPerLevel": 23.5,
+                "algorithm": "bigBase",
+                "materialNames": [
+                    "Bug3",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    70,
+                    4,
+                    4
+                ]
+            },
+            {
+                "name": "SHAQURACY",
+                "description": "Your secondary stat (WIS for warrior, STR for archer, AGI for mage) gives +_% more Accuracy than normal.",
+                "effect": "AccPct",
+                "powerPerLevel": 1.0,
+                "algorithm": "add",
+                "materialNames": [
+                    "Fish4",
+                    "PalmTree",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    65,
+                    250,
+                    5
+                ]
+            },
+            {
+                "name": "CHEAP_SHOT",
+                "description": "+_% critical Chance, as it increases the chance for your attack to hit the monster's privates, and for the monster to be male.",
+                "effect": "CritChance",
+                "powerPerLevel": 7.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Bug5",
+                    "DesertC3",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    35,
+                    150,
+                    5
+                ]
+            },
+            {
+                "name": "BOW_JACK",
+                "description": "+_% Total damage. This multiplies with other damage bonuses, but adds with the other '+% Total Damage' bubbles.",
+                "effect": "pctDmg2",
+                "powerPerLevel": 40.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Soul1",
+                    "Liquid2"
+                ],
+                "materialCosts": [
+                    5,
+                    3
+                ]
+            },
+            {
+                "name": "CALL_ME_ASH",
+                "description": "+1 Placeable Trap, and +_% Trapping Efficiency.",
+                "effect": "TrapACTIVE",
+                "powerPerLevel": 25.0,
+                "algorithm": "bigBase",
+                "materialNames": [
+                    "SaharanFoal",
+                    "Liquid2"
+                ],
+                "materialCosts": [
+                    100,
+                    3
+                ]
+            },
+            {
+                "name": "CUZ_I_CATCH_EM_ALL",
+                "description": "_x more likely to catch shiny critters when opening a trap.",
+                "effect": "CritShiny",
+                "powerPerLevel": 3.0,
+                "algorithm": "decayMulti",
+                "materialNames": [
+                    "Soul3",
+                    "Liquid2"
+                ],
+                "materialCosts": [
+                    25,
+                    4
+                ]
+            },
+            {
+                "name": "FAST_BOI_TALENT",
+                "description": "+_ Talent Points for EACH tab, but just for Archers! Well, and 'that' class, you know who you are!",
+                "effect": "TalArchers",
+                "powerPerLevel": 5.0,
+                "algorithm": "bigBase",
+                "materialNames": [
+                    "Bug6",
+                    "Liquid3"
+                ],
+                "materialCosts": [
+                    120,
+                    2
+                ]
+            },
+            {
+                "name": "GREEN_BARGAIN",
+                "description": "The material costs of ALL green bubbles are _% lower",
+                "effect": "BubbleCostGr",
+                "powerPerLevel": 40.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Critter5",
+                    "Liquid3"
+                ],
+                "materialCosts": [
+                    200,
+                    3
+                ]
+            }
+        ],
+        "purple": [
+            {
+                "name": "STABLE_JENIUS",
+                "description": "+_ Total WIS. Honesty the greatest bonus in any Idle Game, believe me. Absolutely incredible, everyone says so!",
+                "effect": "TotalWIS",
+                "powerPerLevel": 1.0,
+                "algorithm": "add",
+                "materialNames": [
+                    "CraftMat1",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    10,
+                    2
+                ]
+            },
+            {
+                "name": "MAGE_IS_BEST",
+                "description": "All Purple Passive Bonuses, which are the smaller sized ones, give _x more bonuses to your mage-based characters.",
+                "effect": "Ppassz",
+                "powerPerLevel": 2.0,
+                "algorithm": "decayMulti",
+                "materialNames": [
+                    "Grasslands1",
+                    "CopperBar",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    25,
+                    13,
+                    2
+                ]
+            },
+            {
+                "name": "HOCUS_CHOPPUS",
+                "description": "+_% choppin efficiency per power of 10 max MP that your character has. Super diaper! Err, duper.",
+                "effect": "ChopEff",
+                "powerPerLevel": 50.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "CraftMat5",
+                    "ForestTree",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    22,
+                    40,
+                    2
+                ]
+            },
+            {
+                "name": "MOLTO_LOGGO",
+                "description": "Multi-Log chop chance is increased by +_%, and your max Multi-Log chance is now 300% instead of 100%.",
+                "effect": "MultiLogACTIVE",
+                "powerPerLevel": 23.5,
+                "algorithm": "bigBase",
+                "materialNames": [
+                    "IronBar",
+                    "DesertA2",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    21,
+                    30,
+                    3
+                ]
+            },
+            {
+                "name": "NOODUBBLE",
+                "description": "+_% Choppin' and Alchemy EXP gain. Y'know what, I'll even... actually, never mind.",
+                "effect": "ChopAlchEXP",
+                "powerPerLevel": 100.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "CraftMat7",
+                    "Fish2",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    20,
+                    30,
+                    3
+                ]
+            },
+            {
+                "name": "NAME_I_GUESS",
+                "description": "Increases base damage by +$. This bonus increases based on how much Max MP you have above 150.",
+                "effect": "bdmgMP",
+                "powerPerLevel": 1.0,
+                "algorithm": "add",
+                "materialNames": [
+                    "Jungle2",
+                    "Gold",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    110,
+                    40,
+                    4
+                ]
+            },
+            {
+                "name": "LE_BRAIN_TOOLS",
+                "description": "The following tools give +_% more skilling Power than normal: $",
+                "effect": "ToolM",
+                "powerPerLevel": 65.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "BirchTree",
+                    "Bug3",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    250,
+                    55,
+                    4
+                ]
+            },
+            {
+                "name": "COOKIN_ROADKILL",
+                "description": "Cranium Cooking lasts _% longer, gives _% more progress per kill, and has a _% lower cooldown. Also +_% Alchemy EXP!",
+                "effect": "AlchemyACTIVE",
+                "powerPerLevel": 120.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "ToiletTree",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    75,
+                    4
+                ]
+            },
+            {
+                "name": "BREWSTACHIO",
+                "description": "+_% Brew Speed. This a multiplicative bonus, which means its ultra powerful, all the time! Even on Mondays, the worst day!",
+                "effect": "BrewSpd",
+                "powerPerLevel": 50.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "DesertC1",
+                    "Fish4",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    150,
+                    50,
+                    5
+                ]
+            },
+            {
+                "name": "ALL_FOR_KILL",
+                "description": "Attack Talents give +_% higher bonuses to Offline Gains than they normally do. So you might as well just AFK forever, bye!",
+                "effect": "AttackAfk",
+                "powerPerLevel": 40.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "StumpTree",
+                    "PlatBar",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    100,
+                    5,
+                    5
+                ]
+            },
+            {
+                "name": "MATTY_STAFFORD",
+                "description": "+_% Total damage. This multiplies with other damage bonuses, but adds with the other '+% Total Damage' bubbles.",
+                "effect": "pctDmg3",
+                "powerPerLevel": 40.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Refinery1",
+                    "Liquid2"
+                ],
+                "materialCosts": [
+                    3,
+                    3
+                ]
+            },
+            {
+                "name": "CALL_ME_POPE",
+                "description": "_x Worship Charge rate per hour. Also, _x Max Worship Charge! You bouta go super with all that charge... just sayin'",
+                "effect": "worshipACTIVE",
+                "powerPerLevel": 2.4,
+                "algorithm": "decayMulti",
+                "materialNames": [
+                    "Critter2",
+                    "Liquid2"
+                ],
+                "materialCosts": [
+                    25,
+                    3
+                ]
+            },
+            {
+                "name": "GOSPEL_LEADER",
+                "description": "+_% Max Charge per 10 Worship levels. I guess you could say this upgrade doesn't come Free of Charge!",
+                "effect": "maxCharge",
+                "powerPerLevel": 60.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Bug5",
+                    "Liquid2"
+                ],
+                "materialCosts": [
+                    150,
+                    4
+                ]
+            },
+            {
+                "name": "SMART_BOI_TALENT",
+                "description": "Sorry, mages don't get anything because you're lame.... Ok fine, you can have +_ Talent Points for each tab, but I'm not happy about it.",
+                "effect": "TalWiz",
+                "powerPerLevel": 5.0,
+                "algorithm": "bigBase",
+                "materialNames": [
+                    "SnowC1",
+                    "Liquid3"
+                ],
+                "materialCosts": [
+                    150,
+                    2
+                ]
+            },
+            {
+                "name": "PURPLE_BARGAIN",
+                "description": "The material costs of ALL purple bubbles are _% lower",
+                "effect": "BubbleCostPu",
+                "powerPerLevel": 40.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Soul1",
+                    "Liquid3"
+                ],
+                "materialCosts": [
+                    800,
+                    3
+                ]
+            }
+        ],
+        "yellow": [
+            {
+                "name": "LOTTO_SKILLS",
+                "description": "+_ LUK. Also, this will increase your chances of winning the lottery in real life from 0.0% to 0.000%! I'm not even joking, it's true!!",
+                "effect": "TotalLUK",
+                "powerPerLevel": 1.0,
+                "algorithm": "add",
+                "materialNames": [
+                    "Copper",
+                    "OakTree",
+                    "CraftMat1"
+                ],
+                "materialCosts": [
+                    11,
+                    15,
+                    8
+                ]
+            },
+            {
+                "name": "DROPPIN_LOADS",
+                "description": "+_% Drop Rate. Thanks to this upgrade, you can get even MORE angry when you keep not getting that rare pet drop from the boss!",
+                "effect": "DropRate",
+                "powerPerLevel": 40.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Fish1",
+                    "Bug1",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    20,
+                    30,
+                    2
+                ]
+            },
+            {
+                "name": "STARTUE_EXP",
+                "description": "Leveling up a statue resets it's exp bar down to _%, instead of 0%. Staturrific! Yea... the jokes are only gonna go downhill from here lol",
+                "effect": "StatueStartEXP",
+                "powerPerLevel": 25.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "DesertA1",
+                    "Forest2",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    30,
+                    40,
+                    2
+                ]
+            },
+            {
+                "name": "LEVEL_UP_GIFT",
+                "description": "Whenever you level up anything, _% chance to drop a gift! It could be an EXP balloon, a Gem for the gem shop, or something crazy weird!",
+                "effect": "LevelUpACTIVE",
+                "powerPerLevel": 100.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Iron",
+                    "JungleTree",
+                    "CraftMat5"
+                ],
+                "materialCosts": [
+                    35,
+                    70,
+                    30
+                ]
+            },
+            {
+                "name": "PROWESESSARY",
+                "description": "The Prowess Bonus for every skill is multiplied by _. Prowess lowers the Efficiency needed to get multiple QTY per drop from resources.",
+                "effect": "ProwessMulti",
+                "powerPerLevel": 1.5,
+                "algorithm": "decayMulti",
+                "materialNames": [
+                    "GoldBar",
+                    "ToiletTree",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    25,
+                    50,
+                    3
+                ]
+            },
+            {
+                "name": "STAMP_TRAMP",
+                "description": "Increases the Max Lv of the 'Toilet Paper Postage' Talent to _. You can unlock this talent by typing 'More like Poopy Pete' near Pete.",
+                "effect": "TPpostage",
+                "powerPerLevel": 1.0,
+                "algorithm": "add",
+                "materialNames": [
+                    "Bug2",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    65,
+                    4
+                ]
+            },
+            {
+                "name": "UNDEVELOPED_COSTS",
+                "description": "Reduces the material costs of all Alchemy Bubbles by _%. They are just bubbles though, how much could they even cost? 10 dollars?",
+                "effect": "BubbleCost",
+                "powerPerLevel": 40.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Fish3",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    75,
+                    6
+                ]
+            },
+            {
+                "name": "DA_DAILY_DRIP",
+                "description": "Increases the Max Cap for every liquid by +$. This bonus increases based on the combined Alchemy LV of all your characters!",
+                "effect": "LqdCap",
+                "powerPerLevel": 30.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "CraftMat9",
+                    "Liquid1"
+                ],
+                "materialCosts": [
+                    125,
+                    8
+                ]
+            },
+            {
+                "name": "GRIND_TIME",
+                "description": "+_% Class EXP. The go-to active bubble for anyone who wants to reach max level faster and finally start playing the game!",
+                "effect": "expACTIVE",
+                "powerPerLevel": 9.7,
+                "algorithm": "bigBase",
+                "materialNames": [
+                    "Liquid1",
+                    "Liquid2"
+                ],
+                "materialCosts": [
+                    50,
+                    25
+                ]
+            },
+            {
+                "name": "LAAARRRRYYYY",
+                "description": "Every time you upgrade an Alchemy bubble, there's a _% chance it'll upgrade 2 times, for no extra cost! Two fer one, getter dun!",
+                "effect": "DoubleBubbleUpg",
+                "powerPerLevel": 120.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Dementia",
+                    "DesertC4",
+                    "Liquid2"
+                ],
+                "materialCosts": [
+                    50,
+                    130,
+                    4
+                ]
+            },
+            {
+                "name": "COGS_FOR_HANDS",
+                "description": "+_% Cog Production speed. Cogs are great. I really really like cogs. I guess you could say I think they're pretty Coggers...",
+                "effect": "CogMakeSpd",
+                "powerPerLevel": 4.0,
+                "algorithm": "add",
+                "materialNames": [
+                    "SnowA2",
+                    "Liquid2"
+                ],
+                "materialCosts": [
+                    50,
+                    3
+                ]
+            },
+            {
+                "name": "SAMPLE_IT",
+                "description": "+_% Sample Size when taking samples for the 3d printer. Finally, your statisitcal analysis will be accurate!",
+                "effect": "SampleSize",
+                "powerPerLevel": 12.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Soul2",
+                    "Liquid2"
+                ],
+                "materialCosts": [
+                    15,
+                    3
+                ]
+            },
+            {
+                "name": "BIG_GAME_HUNTER",
+                "description": "Each time a Giant Monster spawns, the chance for another Giant Monster in that same week goes down by _% less than normal.",
+                "effect": "GiantsACTIVE",
+                "powerPerLevel": 70.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Critter3",
+                    "Liquid2"
+                ],
+                "materialCosts": [
+                    40,
+                    4
+                ]
+            },
+            {
+                "name": "IGNORE_OVERDUES",
+                "description": "+_% Book Checkout speed, thanks to this one little bubble that librarians do NOT want you to know about!",
+                "effect": "booksSpeed",
+                "powerPerLevel": 100.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Tree7",
+                    "Liquid3"
+                ],
+                "materialCosts": [
+                    120,
+                    2
+                ]
+            },
+            {
+                "name": "YELLOW_BARGAIN",
+                "description": "The material costs of ALL yellow bubbles are _% lower.",
+                "effect": "BubbleCostYe",
+                "powerPerLevel": 40.0,
+                "algorithm": "decay",
+                "materialNames": [
+                    "Critter6",
+                    "Liquid3"
+                ],
+                "materialCosts": [
+                    250,
+                    3
+                ]
+            }
+        ]
+    },
+    "vials": [
+        {
+            "name": "COPPER_CORONA",
+            "description": "Orange bubble cauldron brew speed is increased by +_%",
+            "effect": "OrangeBrew",
+            "powerPerLevel": 3.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Copper",
+                "Liquid1"
+            ],
+            "unlock": "Copper",
+            "roll": 1
+        },
+        {
+            "name": "SIPPY_SPLINTERS",
+            "description": "Green bubble cauldron brew speed is increased by +_%",
+            "effect": "GreenBrew",
+            "powerPerLevel": 3.0,
+            "algorithm": "add",
+            "materialNames": [
+                "OakTree",
+                "Liquid1"
+            ],
+            "unlock": "OakTree",
+            "roll": 10
+        },
+        {
+            "name": "MUSHROOM_SOUP",
+            "description": "Yellow cauldron brew speed is increased by +_%",
+            "effect": "YellowBrew",
+            "powerPerLevel": 3.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Grasslands1",
+                "Liquid1"
+            ],
+            "unlock": "Grasslands1",
+            "roll": 20
+        },
+        {
+            "name": "SPOOL_SPRITE",
+            "description": "Purple cauldron brew speed is increased by +_%",
+            "effect": "PurpleBrew",
+            "powerPerLevel": 3.0,
+            "algorithm": "add",
+            "materialNames": [
+                "CraftMat1",
+                "Liquid1"
+            ],
+            "unlock": "CraftMat1",
+            "roll": 30
+        },
+        {
+            "name": "BARIUM_MIXTURE",
+            "description": "+_ Water Droplet max capacity. Thats the 1st liquid type in Alchemy, btw.",
+            "effect": "Liquid1Cap",
+            "powerPerLevel": 3.0,
+            "algorithm": "add",
+            "materialNames": [
+                "CopperBar",
+                "Liquid1"
+            ],
+            "unlock": "CopperBar",
+            "roll": 40
+        },
+        {
+            "name": "DIETER_DRINK",
+            "description": "Monsters drop +_% more money.",
+            "effect": "MonsterCash",
             "powerPerLevel": 1.0,
             "algorithm": "add",
-            "materialNames": ["OakTree", "Liquid1"],
-            "materialCosts": [25, 2]
-        }, {
-            "name": "WARRIORS_RULE",
-            "description": "All Orange Passive Bubbles, which are the smaller sized ones, give a _x higher bonus to your warrior-based classes.",
-            "effect": "Opassz",
+            "materialNames": [
+                "Grasslands3",
+                "Liquid1"
+            ],
+            "unlock": "Grasslands3",
+            "roll": 40
+        },
+        {
+            "name": "SKINNY_0_CAL",
+            "description": "+_% chance to get double points when depositing statues. So like... if you deposit one statue, it might count as one! Or two.",
+            "effect": "StatueDouble",
+            "powerPerLevel": 2.5,
+            "algorithm": "add",
+            "materialNames": [
+                "Jungle2",
+                "Liquid1"
+            ],
+            "unlock": "Jungle2",
+            "roll": 60
+        },
+        {
+            "name": "THUMB_POW",
+            "description": "When converting Skill EXP into Class EXP using the 'EXP CONVERTER' star talent, you'll get _% more Class EXP than you usually do.",
+            "effect": "ClassEXPconvert",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "CraftMat5",
+                "Liquid1"
+            ],
+            "unlock": "CraftMat5",
+            "roll": 50
+        },
+        {
+            "name": "JUNGLE_JUICE",
+            "description": "+_% liquid regen rate for all liquid cauldrons. Yes, even the secret one!",
+            "effect": "LiquidRegen",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "JungleTree",
+                "Liquid1"
+            ],
+            "unlock": "JungleTree",
+            "roll": 60
+        },
+        {
+            "name": "BARLEY_BREW",
+            "description": "Alchemy bubble upgrade costs are _% lower for all bubbles! Even the giraffe bubbles that look strangely like elephants!",
+            "effect": "AlchBubbleCost",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "IronBar",
+                "Liquid1"
+            ],
+            "unlock": "IronBar",
+            "roll": 65
+        },
+        {
+            "name": "ANEARFUL",
+            "description": "+_% Card drop rate. Even works offline, just like it always has! What do you mean this used to say something different...?",
+            "effect": "CardDrop",
             "powerPerLevel": 2.0,
-            "algorithm": "decayMulti",
-            "materialNames": ["Grasslands1", "CraftMat1", "Liquid1"],
-            "materialCosts": [20, 3, 2]
-        }, {
-            "name": "HEARTY_DIGGY",
-            "description": "+_% mining efficiency per power of 10 max HP that your character has. The perfect bonus for miners with infinite HP!",
-            "effect": "MinEff",
-            "powerPerLevel": 50.0,
-            "algorithm": "decay",
-            "materialNames": ["JungleTree", "CopperBar", "Liquid1"],
-            "materialCosts": [40, 18, 2]
-        }, {
-            "name": "WYOMING_BLOOD",
-            "description": "Multi-Ore mining chance is increased by +_%, and your max Multi-Ore chance is 300% instead of 100%.",
-            "effect": "MiningACTIVE",
-            "powerPerLevel": 23.5,
-            "algorithm": "bigBase",
-            "materialNames": ["Bug1", "Forest1", "Liquid1"],
-            "materialCosts": [30, 50, 3]
-        }, {
-            "name": "REELY_SMART",
-            "description": "+_% Mining and Fishing EXP gain. Y'know what, I'll even DOUBLE that bonus for whichever skill has the lower level!",
-            "effect": "MinFishEXP",
-            "powerPerLevel": 100.0,
-            "algorithm": "decay",
-            "materialNames": ["CraftMat6", "DesertA3", "Liquid1"],
-            "materialCosts": [25, 40, 3]
-        }, {
-            "name": "BIG_MEATY_CLAWS",
-            "description": "Increases base damage by +$. This bonus increases based on how much Max HP you have above 250.",
-            "effect": "bdmgHP",
+            "algorithm": "add",
+            "materialNames": [
+                "Forest1",
+                "Liquid1"
+            ],
+            "unlock": "Forest1",
+            "roll": 70
+        },
+        {
+            "name": "TEA_WITH_PEA",
+            "description": "+_ Liquid Nitrogen max capacity. Thats the 2nd liquid type in Alchemy, btw.",
+            "effect": "Liquid2Cap",
+            "powerPerLevel": 3.0,
+            "algorithm": "add",
+            "materialNames": [
+                "ToiletTree",
+                "Liquid1"
+            ],
+            "unlock": "ToiletTree",
+            "roll": 75
+        },
+        {
+            "name": "GOLD_GUZZLE",
+            "description": "+_% Shop sell price.",
+            "effect": "ShopSell",
             "powerPerLevel": 1.0,
             "algorithm": "add",
-            "materialNames": ["BirchTree", "DesertB2", "Liquid1"],
-            "materialCosts": [200, 75, 4]
-        }, {
-            "name": "SPLOOSH_SPLOOSH",
-            "description": "Multi-Fish fishing chance is increased by +_%, and your max Multi-Fish chance is 300% instead of 100%.",
-            "effect": "FishingACTIVE",
-            "powerPerLevel": 23.5,
-            "algorithm": "bigBase",
-            "materialNames": ["Fish2", "Liquid1"],
-            "materialCosts": [100, 4]
-        }, {
-            "name": "STRONK_TOOLS",
-            "description": "The following tools give +_% more skilling Power than normal: $",
-            "effect": "ToolW",
-            "powerPerLevel": 65.0,
-            "algorithm": "decay",
-            "materialNames": ["Plat", "Grasslands2", "Liquid1"],
-            "materialCosts": [60, 200, 4]
-        }, {
-            "name": "FMJ",
-            "description": "+_% more defence from Equipment. Also, +1 base Def per Class LV, up to +_.",
-            "effect": "DefPct",
+            "materialNames": [
+                "Gold",
+                "Liquid1"
+            ],
+            "unlock": "Gold",
+            "roll": 83
+        },
+        {
+            "name": "RAMIFICOCTION",
+            "description": "+_ Talent Points for Tab 1. Shout out to that 1 person who'll make it this far without knowing what talents are, you're my hero!",
+            "effect": "Tab1Pts",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Forest3",
+                "Liquid1"
+            ],
+            "unlock": "Forest3",
+            "roll": 84
+        },
+        {
+            "name": "SEAWATER",
+            "description": "+_% chance for 1 kill to count for 2 when trying to open new portals, but only while actively playing. One, two, buckle my shoe.",
+            "effect": "MultiKillPlay",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Fish1",
+                "Liquid1"
+            ],
+            "unlock": "Fish1",
+            "roll": 87
+        },
+        {
+            "name": "TAIL_TIME",
+            "description": "+_ Weapon Power. This is gonna be OP in later worlds I can already tell.",
+            "effect": "WeaponPOW",
             "powerPerLevel": 0.5,
             "algorithm": "add",
-            "materialNames": ["Bug4", "DesertC2", "Liquid1"],
-            "materialCosts": [50, 140, 5]
-        }, {
-            "name": "BAPPITY_BOOPITY",
-            "description": "+_% critical Damage. Badabing, badaboom! Or in Italian, Babadabinga, babadaboomahh!",
-            "effect": "critDMG",
-            "powerPerLevel": 35.0,
-            "algorithm": "decay",
-            "materialNames": ["CraftMat8", "JungleTree", "Liquid1"],
-            "materialCosts": [100, 700, 5]
-        }, {
-            "name": "BRITTLEY_SPEARS",
-            "description": "+_% Total damage. This multiplies with other damage bonuses, but adds with the other '+% Total Damage' bubbles.",
-            "effect": "pctDmg1",
-            "powerPerLevel": 40.0,
-            "algorithm": "decay",
-            "materialNames": ["Critter1", "Liquid2"],
-            "materialCosts": [10, 3]
-        }, {
-            "name": "CALL_ME_BOB",
-            "description": "+_% Construction EXP Gain. Also gives +50% Bug-Fixing speed if your username is LavaFlame2. Actually, better make that +500%...",
-            "effect": "conEXPACTIVE",
-            "powerPerLevel": 25.0,
-            "algorithm": "bigBase",
-            "materialNames": ["SnowA3", "Liquid2"],
-            "materialCosts": [120, 3]
-        }, {
-            "name": "CARPENTER",
-            "description": "+_% Build Speed per Construction Level.",
-            "effect": "Construction",
-            "powerPerLevel": 2.0,
-            "algorithm": "decay",
-            "materialNames": ["Refinery2", "Liquid2"],
-            "materialCosts": [3, 4]
-        }, {
-            "name": "BUFF_BOI_TALENT",
-            "description": "+_ Talent Points for EACH tab! Yea, it's amazing right? But it's just for warriors, don't tell the other classes!!",
-            "effect": "TalWarrior",
-            "powerPerLevel": 5.0,
-            "algorithm": "bigBase",
-            "materialNames": ["Critter4", "Liquid3"],
-            "materialCosts": [50, 2]
-        }, {
-            "name": "ORANGE_BARGAIN",
-            "description": "The material costs of ALL orange bubbles are _% lower",
-            "effect": "BubbleCostOr",
-            "powerPerLevel": 40.0,
-            "algorithm": "decay",
-            "materialNames": ["Soul4", "Liquid3"],
-            "materialCosts": [30, 3]
-        }],
-        "green": [{
-            "name": "SWIFT_STEPPIN",
-            "description": "+_ Total AGI. Probably the lamest of the five stats... err, I mean four, hehe.",
-            "effect": "TotalAGI",
-            "powerPerLevel": 1.0,
-            "algorithm": "add",
-            "materialNames": ["Copper", "Liquid1"],
-            "materialCosts": [15, 2]
-        }, {
-            "name": "ARCHER_OR_BUST",
-            "description": "All Green Passive Bonuses, which are the smaller sized ones, give _x more bonuses to your archer-based characters.",
-            "effect": "Gpassz",
-            "powerPerLevel": 2.0,
-            "algorithm": "decayMulti",
-            "materialNames": ["Grasslands1", "BirchTree", "Liquid1"],
-            "materialCosts": [20, 30, 2]
-        }, {
-            "name": "HAMMER_HAMMER",
-            "description": "You can now produce +1 more items at once in the anvil, and your production speed is increased by _%.",
-            "effect": "AnvilACTIVE",
-            "powerPerLevel": 23.0,
-            "algorithm": "bigBase",
-            "materialNames": ["Iron", "Grasslands3", "Liquid1"],
-            "materialCosts": [30, 30, 2]
-        }, {
-            "name": "LIL_BIG_DAMAGE",
-            "description": "+_% Mastery. Mastery is your stat that boosts minimum damage. Just like in Maplest... err, just like how I thought it up myself!",
-            "effect": "Mastery",
-            "powerPerLevel": 20.0,
-            "algorithm": "decay",
-            "materialNames": ["Fish1", "Jungle3", "Liquid1"],
-            "materialCosts": [25, 40, 3]
-        }, {
-            "name": "ANVILNOMICS",
-            "description": "Costs for buying Anvil Production Points is reduced by _%. This is just like a tax cut, so remember me as a hero!",
-            "effect": "AnvilProdCost",
-            "powerPerLevel": 40.0,
-            "algorithm": "decay",
-            "materialNames": ["ForestTree", "Gold", "Liquid1"],
-            "materialCosts": [50, 40, 3]
-        }, {
-            "name": "QUICK_SLAP",
-            "description": "Increases base damage by +$. This bonus increases based on how much Movement Speed you have above 110%.",
-            "effect": "bdmgSPD",
-            "powerPerLevel": 1.0,
-            "algorithm": "add",
-            "materialNames": ["DesertB1", "CraftMat6", "Liquid1"],
-            "materialCosts": [90, 200, 4]
-        }, {
-            "name": "SANIC_TOOLS",
-            "description": "The following tools give +_% more skilling Power than normal: $",
-            "effect": "ToolA",
-            "powerPerLevel": 65.0,
-            "algorithm": "decay",
-            "materialNames": ["Jungle1", "GoldBar", "Liquid1"],
-            "materialCosts": [130, 6, 4]
-        }, {
-            "name": "BUG]",
-            "description": "Multi-Bug catching chance is increased by +_%, and your max Multi-Bug chance is 300% instead of 100%.",
-            "effect": "CatchingACTIVE",
-            "powerPerLevel": 23.5,
-            "algorithm": "bigBase",
-            "materialNames": ["Bug3", "Liquid1"],
-            "materialCosts": [70, 4, 4]
-        }, {
-            "name": "SHAQURACY",
-            "description": "Your secondary stat (WIS for warrior, STR for archer, AGI for mage) gives +_% more Accuracy than normal.",
-            "effect": "AccPct",
-            "powerPerLevel": 1.0,
-            "algorithm": "add",
-            "materialNames": ["Fish4", "PalmTree", "Liquid1"],
-            "materialCosts": [65, 250, 5]
-        }, {
-            "name": "CHEAP_SHOT",
-            "description": "+_% critical Chance, as it increases the chance for your attack to hit the monster's privates, and for the monster to be male.",
-            "effect": "CritChance",
-            "powerPerLevel": 7.0,
-            "algorithm": "decay",
-            "materialNames": ["Bug5", "DesertC3", "Liquid1"],
-            "materialCosts": [35, 150, 5]
-        }, {
-            "name": "BOW_JACK",
-            "description": "+_% Total damage. This multiplies with other damage bonuses, but adds with the other '+% Total Damage' bubbles.",
-            "effect": "pctDmg2",
-            "powerPerLevel": 40.0,
-            "algorithm": "decay",
-            "materialNames": ["Soul1", "Liquid2"],
-            "materialCosts": [5, 3]
-        }, {
-            "name": "CALL_ME_ASH",
-            "description": "+1 Placeable Trap, and +_% Trapping Efficiency.",
-            "effect": "TrapACTIVE",
-            "powerPerLevel": 25.0,
-            "algorithm": "bigBase",
-            "materialNames": ["SaharanFoal", "Liquid2"],
-            "materialCosts": [100, 3]
-        }, {
-            "name": "CUZ_I_CATCH_EM_ALL",
-            "description": "_x more likely to catch shiny critters when opening a trap.",
-            "effect": "CritShiny",
+            "materialNames": [
+                "Sewers2",
+                "Liquid1"
+            ],
+            "unlock": "Sewers2",
+            "roll": 91
+        },
+        {
+            "name": "FLY_IN_MY_DRINK",
+            "description": "Eww go get me another one, I can't drink this! ...what, why are you looking at me like that? OH right, uh, this gives +_ base Accuracy.",
+            "effect": "baseACC",
             "powerPerLevel": 3.0,
-            "algorithm": "decayMulti",
-            "materialNames": ["Soul3", "Liquid2"],
-            "materialCosts": [25, 4]
-        }, {
-            "name": "FAST_BOI_TALENT",
-            "description": "+_ Talent Points for EACH tab, but just for Archers! Well, and 'that' class, you know who you are!",
-            "effect": "TalArchers",
-            "powerPerLevel": 5.0,
-            "algorithm": "bigBase",
-            "materialNames": ["Bug6", "Liquid3"],
-            "materialCosts": [120, 2]
-        }, {
-            "name": "GREEN_BARGAIN",
-            "description": "The material costs of ALL green bubbles are _% lower",
-            "effect": "BubbleCostGr",
-            "powerPerLevel": 40.0,
-            "algorithm": "decay",
-            "materialNames": ["Critter5", "Liquid3"],
-            "materialCosts": [200, 3]
-        }],
-        "purple": [{
-            "name": "STABLE_JENIUS",
-            "description": "+_ Total WIS. Honesty the greatest bonus in any Idle Game, believe me. Absolutely incredible, everyone says so!",
-            "effect": "TotalWIS",
+            "algorithm": "add",
+            "materialNames": [
+                "Bug1",
+                "Liquid1"
+            ],
+            "unlock": "Bug1",
+            "roll": 87
+        },
+        {
+            "name": "MIMICRAUGHT",
+            "description": "+_% EXP from monsters. Sorry, I know this is a lame bonus. Send me an email if you want me change it to +_% NPC dialogue talking speed.",
+            "effect": "MonsterEXP",
             "powerPerLevel": 1.0,
             "algorithm": "add",
-            "materialNames": ["CraftMat1", "Liquid1"],
-            "materialCosts": [10, 2]
-        }, {
-            "name": "MAGE_IS_BEST",
-            "description": "All Purple Passive Bonuses, which are the smaller sized ones, give _x more bonuses to your mage-based characters.",
-            "effect": "Ppassz",
-            "powerPerLevel": 2.0,
-            "algorithm": "decayMulti",
-            "materialNames": ["Grasslands1", "CopperBar", "Liquid1"],
-            "materialCosts": [25, 13, 2]
-        }, {
-            "name": "HOCUS_CHOPPUS",
-            "description": "+_% choppin efficiency per power of 10 max MP that your character has. Super diaper! Err, duper.",
-            "effect": "ChopEff",
-            "powerPerLevel": 50.0,
-            "algorithm": "decay",
-            "materialNames": ["CraftMat5", "ForestTree", "Liquid1"],
-            "materialCosts": [22, 40, 2]
-        }, {
-            "name": "MOLTO_LOGGO",
-            "description": "Multi-Log chop chance is increased by +_%, and your max Multi-Log chance is now 300% instead of 100%.",
-            "effect": "MultiLogACTIVE",
-            "powerPerLevel": 23.5,
-            "algorithm": "bigBase",
-            "materialNames": ["IronBar", "DesertA2", "Liquid1"],
-            "materialCosts": [21, 30, 3]
-        }, {
-            "name": "NOODUBBLE",
-            "description": "+_% Choppin' and Alchemy EXP gain. Y'know what, I'll even... actually, never mind.",
-            "effect": "ChopAlchEXP",
-            "powerPerLevel": 100.0,
-            "algorithm": "decay",
-            "materialNames": ["CraftMat7", "Fish2", "Liquid1"],
-            "materialCosts": [20, 30, 3]
-        }, {
-            "name": "NAME_I_GUESS",
-            "description": "Increases base damage by +$. This bonus increases based on how much Max MP you have above 150.",
-            "effect": "bdmgMP",
-            "powerPerLevel": 1.0,
-            "algorithm": "add",
-            "materialNames": ["Jungle2", "Gold", "Liquid1"],
-            "materialCosts": [110, 40, 4]
-        }, {
-            "name": "LE_BRAIN_TOOLS",
-            "description": "The following tools give +_% more skilling Power than normal: $",
-            "effect": "ToolM",
-            "powerPerLevel": 65.0,
-            "algorithm": "decay",
-            "materialNames": ["BirchTree", "Bug3", "Liquid1"],
-            "materialCosts": [250, 55, 4]
-        }, {
-            "name": "COOKIN_ROADKILL",
-            "description": "Cranium Cooking lasts _% longer, gives _% more progress per kill, and has a _% lower cooldown. Also +_% Alchemy EXP!",
-            "effect": "AlchemyACTIVE",
-            "powerPerLevel": 120.0,
-            "algorithm": "decay",
-            "materialNames": ["ToiletTree", "Liquid1"],
-            "materialCosts": [75, 4]
-        }, {
-            "name": "BREWSTACHIO",
-            "description": "+_% Brew Speed. This a multiplicative bonus, which means its ultra powerful, all the time! Even on Mondays, the worst day!",
-            "effect": "BrewSpd",
-            "powerPerLevel": 50.0,
-            "algorithm": "decay",
-            "materialNames": ["DesertC1", "Fish4", "Liquid1"],
-            "materialCosts": [150, 50, 5]
-        }, {
-            "name": "ALL_FOR_KILL",
-            "description": "Attack Talents give +_% higher bonuses to Offline Gains than they normally do. So you might as well just AFK forever, bye!",
-            "effect": "AttackAfk",
-            "powerPerLevel": 40.0,
-            "algorithm": "decay",
-            "materialNames": ["StumpTree", "PlatBar", "Liquid1"],
-            "materialCosts": [100, 5, 5]
-        }, {
-            "name": "MATTY_STAFFORD",
-            "description": "+_% Total damage. This multiplies with other damage bonuses, but adds with the other '+% Total Damage' bubbles.",
-            "effect": "pctDmg3",
-            "powerPerLevel": 40.0,
-            "algorithm": "decay",
-            "materialNames": ["Refinery1", "Liquid2"],
-            "materialCosts": [3, 3]
-        }, {
-            "name": "CALL_ME_POPE",
-            "description": "_x Worship Charge rate per hour. Also, _x Max Worship Charge! You bouta go super with all that charge... just sayin'",
-            "effect": "worshipACTIVE",
-            "powerPerLevel": 2.4,
-            "algorithm": "decayMulti",
-            "materialNames": ["Critter2", "Liquid2"],
-            "materialCosts": [25, 3]
-        }, {
-            "name": "GOSPEL_LEADER",
-            "description": "+_% Max Charge per 10 Worship levels. I guess you could say this upgrade doesn't come Free of Charge!",
-            "effect": "maxCharge",
-            "powerPerLevel": 60.0,
-            "algorithm": "decay",
-            "materialNames": ["Bug5", "Liquid2"],
-            "materialCosts": [150, 4]
-        }, {
-            "name": "SMART_BOI_TALENT",
-            "description": "Sorry, mages don't get anything because you're lame.... Ok fine, you can have +_ Talent Points for each tab, but I'm not happy about it.",
-            "effect": "TalWiz",
-            "powerPerLevel": 5.0,
-            "algorithm": "bigBase",
-            "materialNames": ["SnowC1", "Liquid3"],
-            "materialCosts": [150, 2]
-        }, {
-            "name": "PURPLE_BARGAIN",
-            "description": "The material costs of ALL purple bubbles are _% lower",
-            "effect": "BubbleCostPu",
-            "powerPerLevel": 40.0,
-            "algorithm": "decay",
-            "materialNames": ["Soul1", "Liquid3"],
-            "materialCosts": [800, 3]
-        }],
-        "yellow": [{
-            "name": "LOTTO_SKILLS",
-            "description": "+_ LUK. Also, this will increase your chances of winning the lottery in real life from 0.0% to 0.000%! I'm not even joking, it's true!!",
-            "effect": "TotalLUK",
-            "powerPerLevel": 1.0,
-            "algorithm": "add",
-            "materialNames": ["Copper", "OakTree", "CraftMat1"],
-            "materialCosts": [11, 15, 8]
-        }, {
-            "name": "DROPPIN_LOADS",
-            "description": "+_% Drop Rate. Thanks to this upgrade, you can get even MORE angry when you keep not getting that rare pet drop from the boss!",
-            "effect": "DropRate",
-            "powerPerLevel": 40.0,
-            "algorithm": "decay",
-            "materialNames": ["Fish1", "Bug1", "Liquid1"],
-            "materialCosts": [20, 30, 2]
-        }, {
-            "name": "STARTUE_EXP",
-            "description": "Leveling up a statue resets it's exp bar down to _%, instead of 0%. Staturrific! Yea... the jokes are only gonna go downhill from here lol",
-            "effect": "StatueStartEXP",
-            "powerPerLevel": 25.0,
-            "algorithm": "decay",
-            "materialNames": ["DesertA1", "Forest2", "Liquid1"],
-            "materialCosts": [30, 40, 2]
-        }, {
-            "name": "LEVEL_UP_GIFT",
-            "description": "Whenever you level up anything, _% chance to drop a gift! It could be an EXP balloon, a Gem for the gem shop, or something crazy weird!",
-            "effect": "LevelUpACTIVE",
-            "powerPerLevel": 100.0,
-            "algorithm": "decay",
-            "materialNames": ["Iron", "JungleTree", "CraftMat5"],
-            "materialCosts": [35, 70, 30]
-        }, {
-            "name": "PROWESESSARY",
-            "description": "The Prowess Bonus for every skill is multiplied by _. Prowess lowers the Efficiency needed to get multiple QTY per drop from resources.",
-            "effect": "ProwessMulti",
-            "powerPerLevel": 1.5,
-            "algorithm": "decayMulti",
-            "materialNames": ["GoldBar", "ToiletTree", "Liquid1"],
-            "materialCosts": [25, 50, 3]
-        }, {
-            "name": "STAMP_TRAMP",
-            "description": "Increases the Max Lv of the 'Toilet Paper Postage' Talent to _. You can unlock this talent by typing 'More like Poopy Pete' near Pete.",
-            "effect": "TPpostage",
-            "powerPerLevel": 1.0,
-            "algorithm": "add",
-            "materialNames": ["Bug2", "Liquid1"],
-            "materialCosts": [65, 4]
-        }, {
-            "name": "UNDEVELOPED_COSTS",
-            "description": "Reduces the material costs of all Alchemy Bubbles by _%. They are just bubbles though, how much could they even cost? 10 dollars?",
-            "effect": "BubbleCost",
-            "powerPerLevel": 40.0,
-            "algorithm": "decay",
-            "materialNames": ["Fish3", "Liquid1"],
-            "materialCosts": [75, 6]
-        }, {
-            "name": "DA_DAILY_DRIP",
-            "description": "Increases the Max Cap for every liquid by +$. This bonus increases based on the combined Alchemy LV of all your characters!",
-            "effect": "LqdCap",
+            "materialNames": [
+                "DesertA2",
+                "Liquid1"
+            ],
+            "unlock": "DesertA2",
+            "roll": 90
+        },
+        {
+            "name": "BLUE_FLAV",
+            "description": "-_% material cost for stamps. You know how it's hard to increase stamps max levels? Well this kinda makes that a bit less factual!",
+            "effect": "MatCostStamp",
             "powerPerLevel": 30.0,
             "algorithm": "decay",
-            "materialNames": ["CraftMat9", "Liquid1"],
-            "materialCosts": [125, 8]
-        }, {
-            "name": "GRIND_TIME",
-            "description": "+_% Class EXP. The go-to active bubble for anyone who wants to reach max level faster and finally start playing the game!",
-            "effect": "expACTIVE",
-            "powerPerLevel": 9.7,
-            "algorithm": "bigBase",
-            "materialNames": ["Liquid1", "Liquid2"],
-            "materialCosts": [50, 25]
-        }, {
-            "name": "LAAARRRRYYYY",
-            "description": "Every time you upgrade an Alchemy bubble, there's a _% chance it'll upgrade 2 times, for no extra cost! Two fer one, getter dun!",
-            "effect": "DoubleBubbleUpg",
-            "powerPerLevel": 120.0,
-            "algorithm": "decay",
-            "materialNames": ["Dementia", "DesertC4", "Liquid2"],
-            "materialCosts": [50, 130, 4]
-        }, {
-            "name": "COGS_FOR_HANDS",
-            "description": "+_% Cog Production speed. Cogs are great. I really really like cogs. I guess you could say I think they're pretty Coggers...",
-            "effect": "CogMakeSpd",
+            "materialNames": [
+                "Plat",
+                "Liquid1"
+            ],
+            "unlock": "Plat",
+            "roll": 93
+        },
+        {
+            "name": "SLUG_SLURP",
+            "description": "+_ Post Office Box Points for every character, and easily the best bonus in the game. A box will never abandon you!",
+            "effect": "BoxPoints",
+            "powerPerLevel": 2.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Fish2",
+                "Liquid1"
+            ],
+            "unlock": "Fish2",
+            "roll": 89
+        },
+        {
+            "name": "PICKLE_JAR",
+            "description": "+_% Nothing. Absolutely nothing, now and forever. It's a darn pickle, what were you expecting?",
+            "effect": "Nothing",
+            "powerPerLevel": 50.0,
+            "algorithm": "add",
+            "materialNames": [
+                "BobJoePickle",
+                "Liquid2"
+            ],
+            "unlock": "BobJoePickle",
+            "roll": 99
+        },
+        {
+            "name": "FUR_REFRESHER",
+            "description": "+_% higher Shiny Critter chance. This is a multiplier, so +1% from this vial means 1.01x, so 5% shiny chance would go to 5.05%.",
+            "effect": "Shiny1",
+            "powerPerLevel": 2.0,
+            "algorithm": "add",
+            "materialNames": [
+                "SnowA1",
+                "Liquid2"
+            ],
+            "unlock": "SnowA1",
+            "roll": 75
+        },
+        {
+            "name": "SIPPY_SOUL",
+            "description": "+_ Talent Points for Tab 2.",
+            "effect": "Tab2Pts",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Soul1",
+                "Liquid2"
+            ],
+            "unlock": "Soul1",
+            "roll": 75
+        },
+        {
+            "name": "CRAB_JUICE",
+            "description": "+_ Starting points in Worship Tower Defence. Of course, a true balloon monkey wouldn't accept handouts like this.",
+            "effect": "TDpts",
             "powerPerLevel": 4.0,
             "algorithm": "add",
-            "materialNames": ["SnowA2", "Liquid2"],
-            "materialCosts": [50, 3]
-        }, {
-            "name": "SAMPLE_IT",
-            "description": "+_% Sample Size when taking samples for the 3d printer. Finally, your statisitcal analysis will be accurate!",
+            "materialNames": [
+                "Critter2",
+                "Liquid2"
+            ],
+            "unlock": "Critter2",
+            "roll": 80
+        },
+        {
+            "name": "VOID_VIAL",
+            "description": "+_% Mining Efficiency.",
+            "effect": "MinEff",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Void",
+                "Liquid2"
+            ],
+            "unlock": "Void",
+            "roll": 80
+        },
+        {
+            "name": "RED_MALT",
+            "description": "+_% Refinery Cycle Speed. I just want to see you squirm a bit more as you decide where to spend your precious salts hahahaha!!",
+            "effect": "RefSpd",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Refinery1",
+                "Liquid2"
+            ],
+            "unlock": "Refinery1",
+            "roll": 85
+        },
+        {
+            "name": "EW_GROSS_GROSS",
+            "description": "+_% Catching Efficiency.",
+            "effect": "CatchEff",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Bug5",
+                "Liquid2"
+            ],
+            "unlock": "Bug5",
+            "roll": 86
+        },
+        {
+            "name": "THE_SPANISH_SAHARA",
+            "description": "+_% Choppin Efficiency.",
+            "effect": "ChopEff",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "SaharanFoal",
+                "Liquid2"
+            ],
+            "unlock": "SaharanFoal",
+            "roll": 87
+        },
+        {
+            "name": "POISON_TINCTURE",
+            "description": "Eagle Eye Trap-O-Vision gives +_% more critters. It will always give less than if you manually collected the traps though.",
+            "effect": "TrapOvision",
+            "powerPerLevel": 3.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Critter1A",
+                "Liquid2"
+            ],
+            "unlock": "Critter1A",
+            "roll": 95
+        },
+        {
+            "name": "ETRUSCAN_LAGER",
+            "description": "+_% Fishing Efficiency.",
+            "effect": "FishEff",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "SnowB2",
+                "Liquid2"
+            ],
+            "unlock": "SnowB2",
+            "roll": 88
+        },
+        {
+            "name": "CHONKER_CHUG",
+            "description": "+_% Talent Book Library checkout speed. ",
+            "effect": "TalBookSpd",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Soul2",
+                "Liquid2"
+            ],
+            "unlock": "Soul2",
+            "roll": 90
+        },
+        {
+            "name": "BUBONIC_BURP",
+            "description": "+_ Cog Inventory spaces. DONT PANIC!!! I KNOW HOW ALARMING IT IS THAT A VIAL FINALLY GIVES A USEFUL BONUS FOR ONCE, BUT STAY CALM!",
+            "effect": "CogInv",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Critter4",
+                "Liquid3"
+            ],
+            "unlock": "Critter4",
+            "roll": 91
+        },
+        {
+            "name": "VISIBLE_INK",
+            "description": "+_% Construction Exp gain.",
+            "effect": "ConsExp",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "SnowB3",
+                "Liquid3"
+            ],
+            "unlock": "SnowB3",
+            "roll": 93
+        },
+        {
+            "name": "ORANGE_MALT",
+            "description": "+_% higher Shiny Critter chance. This stacks with the shiny chance from the Fur Refresher vial. You see, they have the same shaped vial.",
+            "effect": "Shiny2",
+            "powerPerLevel": 5.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Refinery2",
+                "Liquid3"
+            ],
+            "unlock": "Refinery2",
+            "roll": 95
+        },
+        {
+            "name": "SNOW_SLURRY",
+            "description": "+_% Printer sample size. My my there are a lot of these 'sample size' bonuses in the game... too many...",
             "effect": "SampleSize",
-            "powerPerLevel": 12.0,
-            "algorithm": "decay",
-            "materialNames": ["Soul2", "Liquid2"],
-            "materialCosts": [15, 3]
-        }, {
-            "name": "BIG_GAME_HUNTER",
-            "description": "Each time a Giant Monster spawns, the chance for another Giant Monster in that same week goes down by _% less than normal.",
-            "effect": "GiantsACTIVE",
-            "powerPerLevel": 70.0,
-            "algorithm": "decay",
-            "materialNames": ["Critter3", "Liquid2"],
-            "materialCosts": [40, 4]
-        }, {
-            "name": "IGNORE_OVERDUES",
-            "description": "+_% Book Checkout speed, thanks to this one little bubble that librarians do NOT want you to know about!",
-            "effect": "booksSpeed",
-            "powerPerLevel": 100.0,
-            "algorithm": "decay",
-            "materialNames": ["Tree7", "Liquid3"],
-            "materialCosts": [120, 2]
-        }, {
-            "name": "YELLOW_BARGAIN",
-            "description": "The material costs of ALL yellow bubbles are _% lower.",
-            "effect": "BubbleCostYe",
-            "powerPerLevel": 40.0,
-            "algorithm": "decay",
-            "materialNames": ["Critter6", "Liquid3"],
-            "materialCosts": [250, 3]
-        }]
-    },
-    "vials": [{
-        "name": "COPPER_CORONA",
-        "description": "Orange bubble cauldron brew speed is increased by +_%",
-        "effect": "OrangeBrew",
-        "powerPerLevel": 3.0,
-        "algorithm": "add",
-        "materialNames": ["Copper", "Liquid1"],
-        "unlock": "Copper",
-        "roll": 1
-    }, {
-        "name": "SIPPY_SPLINTERS",
-        "description": "Green bubble cauldron brew speed is increased by +_%",
-        "effect": "GreenBrew",
-        "powerPerLevel": 3.0,
-        "algorithm": "add",
-        "materialNames": ["OakTree", "Liquid1"],
-        "unlock": "OakTree",
-        "roll": 10
-    }, {
-        "name": "MUSHROOM_SOUP",
-        "description": "Yellow cauldron brew speed is increased by +_%",
-        "effect": "YellowBrew",
-        "powerPerLevel": 3.0,
-        "algorithm": "add",
-        "materialNames": ["Grasslands1", "Liquid1"],
-        "unlock": "Grasslands1",
-        "roll": 20
-    }, {
-        "name": "SPOOL_SPRITE",
-        "description": "Purple cauldron brew speed is increased by +_%",
-        "effect": "PurpleBrew",
-        "powerPerLevel": 3.0,
-        "algorithm": "add",
-        "materialNames": ["CraftMat1", "Liquid1"],
-        "unlock": "CraftMat1",
-        "roll": 30
-    }, {
-        "name": "BARIUM_MIXTURE",
-        "description": "+_ Water Droplet max capacity. Thats the 1st liquid type in Alchemy, btw.",
-        "effect": "Liquid1Cap",
-        "powerPerLevel": 3.0,
-        "algorithm": "add",
-        "materialNames": ["CopperBar", "Liquid1"],
-        "unlock": "CopperBar",
-        "roll": 40
-    }, {
-        "name": "DIETER_DRINK",
-        "description": "Monsters drop +_% more money.",
-        "effect": "MonsterCash",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["Grasslands3", "Liquid1"],
-        "unlock": "Grasslands3",
-        "roll": 40
-    }, {
-        "name": "SKINNY_0_CAL",
-        "description": "+_% chance to get double points when depositing statues. So like... if you deposit one statue, it might count as one! Or two.",
-        "effect": "StatueDouble",
-        "powerPerLevel": 2.5,
-        "algorithm": "add",
-        "materialNames": ["Jungle2", "Liquid1"],
-        "unlock": "Jungle2",
-        "roll": 60
-    }, {
-        "name": "THUMB_POW",
-        "description": "When converting Skill EXP into Class EXP using the 'EXP CONVERTER' star talent, you'll get _% more Class EXP than you usually do.",
-        "effect": "ClassEXPconvert",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["CraftMat5", "Liquid1"],
-        "unlock": "CraftMat5",
-        "roll": 50
-    }, {
-        "name": "JUNGLE_JUICE",
-        "description": "+_% liquid regen rate for all liquid cauldrons. Yes, even the secret one!",
-        "effect": "LiquidRegen",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["JungleTree", "Liquid1"],
-        "unlock": "JungleTree",
-        "roll": 60
-    }, {
-        "name": "BARLEY_BREW",
-        "description": "Alchemy bubble upgrade costs are _% lower for all bubbles! Even the giraffe bubbles that look strangely like elephants!",
-        "effect": "AlchBubbleCost",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["IronBar", "Liquid1"],
-        "unlock": "IronBar",
-        "roll": 65
-    }, {
-        "name": "ANEARFUL",
-        "description": "+_% Card drop rate. Even works offline, just like it always has! What do you mean this used to say something different...?",
-        "effect": "CardDrop",
-        "powerPerLevel": 2.0,
-        "algorithm": "add",
-        "materialNames": ["Forest1", "Liquid1"],
-        "unlock": "Forest1",
-        "roll": 70
-    }, {
-        "name": "TEA_WITH_PEA",
-        "description": "+_ Liquid Nitrogen max capacity. Thats the 2nd liquid type in Alchemy, btw.",
-        "effect": "Liquid2Cap",
-        "powerPerLevel": 3.0,
-        "algorithm": "add",
-        "materialNames": ["ToiletTree", "Liquid1"],
-        "unlock": "ToiletTree",
-        "roll": 75
-    }, {
-        "name": "GOLD_GUZZLE",
-        "description": "+_% Shop sell price.",
-        "effect": "ShopSell",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["Gold", "Liquid1"],
-        "unlock": "Gold",
-        "roll": 83
-    }, {
-        "name": "RAMIFICOCTION",
-        "description": "+_ Talent Points for Tab 1. Shout out to that 1 person who'll make it this far without knowing what talents are, you're my hero!",
-        "effect": "Tab1Pts",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["Forest3", "Liquid1"],
-        "unlock": "Forest3",
-        "roll": 84
-    }, {
-        "name": "SEAWATER",
-        "description": "+_% chance for 1 kill to count for 2 when trying to open new portals, but only while actively playing. One, two, buckle my shoe.",
-        "effect": "MultiKillPlay",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["Fish1", "Liquid1"],
-        "unlock": "Fish1",
-        "roll": 87
-    }, {
-        "name": "TAIL_TIME",
-        "description": "+_ Weapon Power. This is gonna be OP in later worlds I can already tell.",
-        "effect": "WeaponPOW",
-        "powerPerLevel": 0.5,
-        "algorithm": "add",
-        "materialNames": ["Sewers2", "Liquid1"],
-        "unlock": "Sewers2",
-        "roll": 91
-    }, {
-        "name": "FLY_IN_MY_DRINK",
-        "description": "Eww go get me another one, I can't drink this! ...what, why are you looking at me like that? OH right, uh, this gives +_ base Accuracy.",
-        "effect": "baseACC",
-        "powerPerLevel": 3.0,
-        "algorithm": "add",
-        "materialNames": ["Bug1", "Liquid1"],
-        "unlock": "Bug1",
-        "roll": 87
-    }, {
-        "name": "MIMICRAUGHT",
-        "description": "+_% EXP from monsters. Sorry, I know this is a lame bonus. Send me an email if you want me change it to +_% NPC dialogue talking speed.",
-        "effect": "MonsterEXP",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["DesertA2", "Liquid1"],
-        "unlock": "DesertA2",
-        "roll": 90
-    }, {
-        "name": "BLUE_FLAV",
-        "description": "-_% material cost for stamps. You know how it's hard to increase stamps max levels? Well this kinda makes that a bit less factual!",
-        "effect": "MatCostStamp",
-        "powerPerLevel": 30.0,
-        "algorithm": "decay",
-        "materialNames": ["Plat", "Liquid1"],
-        "unlock": "Plat",
-        "roll": 93
-    }, {
-        "name": "SLUG_SLURP",
-        "description": "+_ Post Office Box Points for every character, and easily the best bonus in the game. A box will never abandon you!",
-        "effect": "BoxPoints",
-        "powerPerLevel": 2.0,
-        "algorithm": "add",
-        "materialNames": ["Fish2", "Liquid1"],
-        "unlock": "Fish2",
-        "roll": 89
-    }, {
-        "name": "PICKLE_JAR",
-        "description": "+_% Nothing. Absolutely nothing, now and forever. It's a darn pickle, what were you expecting?",
-        "effect": "Nothing",
-        "powerPerLevel": 50.0,
-        "algorithm": "add",
-        "materialNames": ["BobJoePickle", "Liquid2"],
-        "unlock": "BobJoePickle",
-        "roll": 99
-    }, {
-        "name": "FUR_REFRESHER",
-        "description": "+_% higher Shiny Critter chance. This is a multiplier, so +1% from this vial means 1.01x, so 5% shiny chance would go to 5.05%.",
-        "effect": "Shiny1",
-        "powerPerLevel": 2.0,
-        "algorithm": "add",
-        "materialNames": ["SnowA1", "Liquid2"],
-        "unlock": "SnowA1",
-        "roll": 75
-    }, {
-        "name": "SIPPY_SOUL",
-        "description": "+_ Talent Points for Tab 2.",
-        "effect": "Tab2Pts",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["Soul1", "Liquid2"],
-        "unlock": "Soul1",
-        "roll": 75
-    }, {
-        "name": "CRAB_JUICE",
-        "description": "+_ Starting points in Worship Tower Defence. Of course, a true balloon monkey wouldn't accept handouts like this.",
-        "effect": "TDpts",
-        "powerPerLevel": 4.0,
-        "algorithm": "add",
-        "materialNames": ["Critter2", "Liquid2"],
-        "unlock": "Critter2",
-        "roll": 80
-    }, {
-        "name": "VOID_VIAL",
-        "description": "+_% Mining Efficiency.",
-        "effect": "MinEff",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["Void", "Liquid2"],
-        "unlock": "Void",
-        "roll": 80
-    }, {
-        "name": "RED_MALT",
-        "description": "+_% Refinery Cycle Speed. I just want to see you squirm a bit more as you decide where to spend your precious salts hahahaha!!",
-        "effect": "RefSpd",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["Refinery1", "Liquid2"],
-        "unlock": "Refinery1",
-        "roll": 85
-    }, {
-        "name": "EW_GROSS_GROSS",
-        "description": "+_% Catching Efficiency.",
-        "effect": "CatchEff",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["Bug5", "Liquid2"],
-        "unlock": "Bug5",
-        "roll": 86
-    }, {
-        "name": "THE_SPANISH_SAHARA",
-        "description": "+_% Choppin Efficiency.",
-        "effect": "ChopEff",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["SaharanFoal", "Liquid2"],
-        "unlock": "SaharanFoal",
-        "roll": 87
-    }, {
-        "name": "POISON_TINCTURE",
-        "description": "Eagle Eye Trap-O-Vision gives +_% more critters. It will always give less than if you manually collected the traps though.",
-        "effect": "TrapOvision",
-        "powerPerLevel": 3.0,
-        "algorithm": "add",
-        "materialNames": ["Critter1A", "Liquid2"],
-        "unlock": "Critter1A",
-        "roll": 95
-    }, {
-        "name": "ETRUSCAN_LAGER",
-        "description": "+_% Fishing Efficiency.",
-        "effect": "FishEff",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["SnowB2", "Liquid2"],
-        "unlock": "SnowB2",
-        "roll": 88
-    }, {
-        "name": "CHONKER_CHUG",
-        "description": "+_% Talent Book Library checkout speed. ",
-        "effect": "TalBookSpd",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["Soul2", "Liquid2"],
-        "unlock": "Soul2",
-        "roll": 90
-    }, {
-        "name": "BUBONIC_BURP",
-        "description": "+_ Cog Inventory spaces. DONT PANIC!!! I KNOW HOW ALARMING IT IS THAT A VIAL FINALLY GIVES A USEFUL BONUS FOR ONCE, BUT STAY CALM!",
-        "effect": "CogInv",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["Critter4", "Liquid3"],
-        "unlock": "Critter4",
-        "roll": 91
-    }, {
-        "name": "VISIBLE_INK",
-        "description": "+_% Construction Exp gain.",
-        "effect": "ConsExp",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["SnowB3", "Liquid3"],
-        "unlock": "SnowB3",
-        "roll": 93
-    }, {
-        "name": "ORANGE_MALT",
-        "description": "+_% higher Shiny Critter chance. This stacks with the shiny chance from the Fur Refresher vial. You see, they have the same shaped vial.",
-        "effect": "Shiny2",
-        "powerPerLevel": 5.0,
-        "algorithm": "add",
-        "materialNames": ["Refinery2", "Liquid3"],
-        "unlock": "Refinery2",
-        "roll": 95
-    }, {
-        "name": "SNOW_SLURRY",
-        "description": "+_% Printer sample size. My my there are a lot of these 'sample size' bonuses in the game... too many...",
-        "effect": "SampleSize",
-        "powerPerLevel": 0.5,
-        "algorithm": "add",
-        "materialNames": ["SnowB5", "Liquid3"],
-        "unlock": "SnowB5",
-        "roll": 96
-    }, {
-        "name": "SLOWERGY_DRINK",
-        "description": "+_% Base Multikill per Multikill Tier for all worlds. Stack them skulls!",
-        "effect": "Overkill",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["Soul4", "Liquid3"],
-        "unlock": "Soul4",
-        "roll": 97
-    }, {
-        "name": "SIPPY_CUP",
-        "description": "+_% Cog production speed.",
-        "effect": "CogSpd",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["SnowC1", "Liquid3"],
-        "unlock": "SnowC1",
-        "roll": 97
-    }, {
-        "name": "BUNNY_BREW",
-        "description": "+_ Talent Points for Tab 3.",
-        "effect": "Tab3Pts",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["Critter7", "Liquid3"],
-        "unlock": "Critter7",
-        "roll": 98
-    }, {
-        "name": "40-40_PURITY",
-        "description": "+_ Trench Seawater max capacity. Thats the 3rd liquid type in Alchemy, btw.",
-        "effect": "Liquid3Cap",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["SnowC4", "Liquid3"],
-        "unlock": "SnowC4",
-        "roll": 98
-    }, {
-        "name": "SPOOK_PINT",
-        "description": "+_% base Giant Monster spawn rate.",
-        "effect": "GiantMob",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["Soul6", "Liquid3"],
-        "unlock": "Soul6",
-        "roll": 99
-    }, {
-        "name": "GOOSEY_GLUG",
-        "description": "+_ base critter per trap. This is a sHONKingly good bonus, the only one of its kind!",
-        "effect": "CritterBASED",
-        "powerPerLevel": 1.0,
-        "algorithm": "add",
-        "materialNames": ["Critter9", "Liquid3"],
-        "unlock": "Critter9",
-        "roll": 99
-    }, {
-        "name": "BALL_PICKLE_JAR",
-        "description": "+_% arcade ball gain rate, and those are balls blessed by Balljoepickle himself, so you know they're extra lucky!",
-        "effect": "arcadeBALLZ",
-        "powerPerLevel": 25.0,
-        "algorithm": "add",
-        "materialNames": ["BallJoePickle", "Liquid1"],
-        "unlock": "BallJoePickle",
-        "roll": 99
-    }],
-    "vialCosts": [0, 100, 1000, 2500, 10000, 50000, 100000, 500000, 1000001, 5000000, 25000000, 100000000, 1000000000, 50000000000]
+            "powerPerLevel": 0.5,
+            "algorithm": "add",
+            "materialNames": [
+                "SnowB5",
+                "Liquid3"
+            ],
+            "unlock": "SnowB5",
+            "roll": 96
+        },
+        {
+            "name": "SLOWERGY_DRINK",
+            "description": "+_% Base Multikill per Multikill Tier for all worlds. Stack them skulls!",
+            "effect": "Overkill",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Soul4",
+                "Liquid3"
+            ],
+            "unlock": "Soul4",
+            "roll": 97
+        },
+        {
+            "name": "SIPPY_CUP",
+            "description": "+_% Cog production speed.",
+            "effect": "CogSpd",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "SnowC1",
+                "Liquid3"
+            ],
+            "unlock": "SnowC1",
+            "roll": 97
+        },
+        {
+            "name": "BUNNY_BREW",
+            "description": "+_ Talent Points for Tab 3.",
+            "effect": "Tab3Pts",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Critter7",
+                "Liquid3"
+            ],
+            "unlock": "Critter7",
+            "roll": 98
+        },
+        {
+            "name": "40-40_PURITY",
+            "description": "+_ Trench Seawater max capacity. Thats the 3rd liquid type in Alchemy, btw.",
+            "effect": "Liquid3Cap",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "SnowC4",
+                "Liquid3"
+            ],
+            "unlock": "SnowC4",
+            "roll": 98
+        },
+        {
+            "name": "SPOOK_PINT",
+            "description": "+_% base Giant Monster spawn rate.",
+            "effect": "GiantMob",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Soul6",
+                "Liquid3"
+            ],
+            "unlock": "Soul6",
+            "roll": 99
+        },
+        {
+            "name": "GOOSEY_GLUG",
+            "description": "+_ base critter per trap. This is a sHONKingly good bonus, the only one of its kind!",
+            "effect": "CritterBASED",
+            "powerPerLevel": 1.0,
+            "algorithm": "add",
+            "materialNames": [
+                "Critter9",
+                "Liquid3"
+            ],
+            "unlock": "Critter9",
+            "roll": 99
+        },
+        {
+            "name": "BALL_PICKLE_JAR",
+            "description": "+_% arcade ball gain rate, and those are balls blessed by Balljoepickle himself, so you know they're extra lucky!",
+            "effect": "arcadeBALLZ",
+            "powerPerLevel": 25.0,
+            "algorithm": "add",
+            "materialNames": [
+                "BallJoePickle",
+                "Liquid1"
+            ],
+            "unlock": "BallJoePickle",
+            "roll": 99
+        }
+    ],
+    "vialCosts": [
+        0,
+        100,
+        1000,
+        2500,
+        10000,
+        50000,
+        100000,
+        500000,
+        1000001,
+        5000000,
+        25000000,
+        100000000,
+        1000000000,
+        50000000000
+    ]
 }

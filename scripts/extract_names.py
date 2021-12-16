@@ -110,7 +110,7 @@ if __name__ == "__main__":
 
         with open(filename, "w", newline="") as f:
             if args.format == "json":
-                json.dump(data, f)
+                json.dump(data, f, indent=4)
             elif args.format == "csv":
                 writer = csv.writer(f)
                 writer.writerow(["Internal", "Display"])

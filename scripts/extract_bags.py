@@ -56,5 +56,5 @@ if __name__ == "__main__":
     } | parse_bags(args.infile)
 
     with open("bags.json", "w") as f:
-        json.dump(bags, f)
+        json.dump(bags, f, indent=4)
         print(f"Wrote to bags.json")
